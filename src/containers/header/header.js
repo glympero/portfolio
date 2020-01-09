@@ -299,17 +299,17 @@ const Header = ({ show }) => {
             </li>
             <li>
               <a href="#education" onClick={closeSideBar}>
-                <span>0.</span> Education
+                <span>2.</span> Education
               </a>
             </li>
             <li>
-              <a href="#work" onClick={closeSideBar}>
-                <span>1.</span> Work
+              <a href="#workExperience" onClick={closeSideBar}>
+                <span>3.</span> Work Experience
               </a>
             </li>
             <li>
               <a href="#contact" onClick={closeSideBar}>
-                <span>2.</span> Contact
+                <span>4.</span> Contact
               </a>
             </li>
             <li>

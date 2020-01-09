@@ -74,25 +74,21 @@ const Education = () => {
           <div className="timeline-item">
             <div className="timeline-icon"></div>
             <div className="timeline-content">
-              <h2>UNIVERSITY OF HERTFORDSHIRE - 2015</h2>
+              <h2>SENIOR REACT FRONTEND DEVELOPER</h2>
               <div className="timeline-panel">
                 <div className="timeline-heading">
-                  <h3 className="subheading">MSc Computer Science</h3>
-                  <h5 className="subheading">First Class - With Distinction</h5>
+                  <h3 className="subheading">Boosted Boards</h3>
+                  <h5 className="subheading">January 2019 – Today</h5>
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                    Final Project: An investigation on how the
-                    Model-View-Controller architectural pattern and the Web
-                    Forms model affect the development of a database-driven web-
-                    based application.
+                    Maintaining, optimizing and adding features to Boosted Boards website.
                   </p>
                   <p className="text-muted">
-                    Modules: Introduction to Programming (100%), Object-Oriented
-                    Programming (100%), Software Development Tools and Methods
-                    (84%), Wireless, Mobile and Ad-hoc Networking (69%),
-                    Software Engineering Practice and Experience (81%), Web
-                    Scripting and Application Development (89%)
+                    Team size: 10+
+                  </p>
+                  <p className="text-muted">
+                    Technologies: React, Apollo, GraphQL, Contentfull, Scrum
                   </p>
                 </div>
               </div>
@@ -102,25 +98,90 @@ const Education = () => {
           <div className="timeline-item">
             <div className="timeline-icon"></div>
             <div className="timeline-content right">
-              <h2>STAFFORDSHIRE UNIVERSIT - 2002</h2>
+              <h2>WEB DEVELOPER</h2>
               <div className="timeline-panel">
                 <div className="timeline-heading">
-                  <h3 className="subheading">BSc Music Technology</h3>
-                  <h5>Upper Second-Class Honours Degree</h5>
+                  <h3 className="subheading">Civic UK</h3>
+                  <h5>September 2018 – Today</h5>
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                    Final Project: An investigation into Hardware and Software
-                    for implementation into a Digital Audio Workstation.
+                    Working on improving and expanding an internal tool for Amazon Partner Network –
+                    https://aws.amazon.com/partners/. Using React – Redux and RoR.
                   </p>
                   <p className="text-muted">
-                    Modules: Analogue and Digital Electronics, Circuit Analysis,
-                    Audio Components and Systems, Acoustics and Studio Design,
-                    Digital Signal Processing, Engineering Applications, Music
-                    Technology, Advanced Recording Techniques, Mathematics for
-                    Acoustic &amp; Audio, Video Productions, MIDI, Speech and
-                    Music Technology, Business Planning and Set-up, Music
-                    Composition, Live Sound Technology
+                    Creating the frontend in a web application for managing online car rentals in Greece
+                    which includes a landing page, the dashboard management system for customers
+                    https://admin-stage.simplybook.com/ and payments with stripe.
+                  </p>
+                  <p className="text-muted">
+                    Team size: 4.
+                  </p>
+                  <p className="text-muted">
+                    Technologies: React, Redux, Redux-Thunk, Flexbox, ES6, GitLab.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-icon"></div>
+            <div className="timeline-content">
+              <h2>REACT-NATIVE DEVELOPER</h2>
+              <div className="timeline-panel">
+                <div className="timeline-heading">
+                  <h3 className="subheading">
+                    KeyBee Hosting 
+                  </h3>
+                  <h5>February 2018 – September 2019</h5>
+                </div>
+                <div className="timeline-body">
+                  <p className="text-muted">
+                    Managing and adding new content to a published application to Apple and Play store
+                    which provides services to Airbnb hosts. Also, contributing to design decision,
+                    solutions and architectural improvements.
+                  </p>
+                  <p className="text-muted">
+                    The application includes a complex link system with Airbnb which simulates the login
+                    process (captcha, two step verification (call-text or email)) in order to get a verified
+                    account and connect it with the application.
+                  </p>
+                  <p className="text-muted">
+                    Team size: 10 (2 Developers).
+                  </p>
+                  <p className="text-muted">
+                    Technologies: React, React-Native, Redux, Redux-Thunk, ES6.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-icon"></div>
+            <div className="timeline-content right">
+              <h2>REACT FRONTEND DEVELOPER</h2>
+              <div className="timeline-panel">
+                <div className="timeline-heading">
+                  <h3>SimplyBook</h3>
+                  <h5>December 2016 – Today</h5>
+                </div>
+                <div className="timeline-body">
+                  <p className="text-muted">
+                    Contributing to design decision, solutions and architectural improvements.
+                  </p>
+                  <p className="text-muted">
+                    Creating the frontend in a web application for managing online car rentals in Greece
+                    which includes a landing page, the dashboard management system for customers
+                    https://admin-stage.simplybook.com/ and payments with stripe.
+                  </p>
+                  <p className="text-muted">
+                    Team size: 4
+                  </p>
+                  <p className="text-muted">
+                    Technologies: React, Redux, Redux-Thunk, Flexbox, ES6, GitLab.
                   </p>
                 </div>
               </div>
@@ -130,13 +191,17 @@ const Education = () => {
           <div className="timeline-item">
             <div className="timeline-icon"></div>
             <div className="timeline-content">
-              <h2>MUSIC SCHOOL OF IONIA - 1995 & 1998</h2>
+              <h2>TEACHING ASSISTANT / INSTRUCTOR</h2>
               <div className="timeline-panel">
                 <div className="timeline-heading">
-                  <h3 className="subheading">
-                    Harmony &amp; Counterpoint Diploma
-                  </h3>
-                  <h5>Grade - Excellent</h5>
+                  <h3>Matacode LLC</h3>
+                  <h5>January 2017 – January 2019</h5>
+                </div>
+                <div className="timeline-body">
+                  <p className="text-muted">
+                    Teaching Assistant at “The Complete MySQL Developer Course” (Udemy.com).
+                    Managing content, providing solutions for students in the QA section.
+                  </p>
                 </div>
               </div>
             </div>
@@ -145,14 +210,55 @@ const Education = () => {
           <div className="timeline-item">
             <div className="timeline-icon"></div>
             <div className="timeline-content right">
-              <h2>THE UNIVERSITY OF MICHIGAN - 1998</h2>
+              <h2>ANGULAR FRONTEND DEVELOPER</h2>
               <div className="timeline-panel">
                 <div className="timeline-heading">
-                  <h3>Certificate of Proficiency in English</h3>
+                  <h3 className="subheading">
+                    KeyBee Hosting 
+                  </h3>
+                  <h5>February 2018 – September 2019</h5>
+                </div>
+                <div className="timeline-body">
+                  <p className="text-muted">
+                    Managing and adding new content to a published application to Apple and Play store
+                    which provides services to Airbnb hosts. Also, contributing to design decision,
+                    solutions and architectural improvements.
+                  </p>
+                  <p className="text-muted">
+                    The application includes a complex link system with Airbnb which simulates the login
+                    process (captcha, two step verification (call-text or email)) in order to get a verified
+                    account and connect it with the application.
+                  </p>
+                  <p className="text-muted">
+                    Team size: 10 (2 Developers).
+                  </p>
+                  <p className="text-muted">
+                    Technologies: React, React-Native, Redux, Redux-Thunk, ES6.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+
+          <div className="timeline-item">
+            <div className="timeline-icon"></div>
+            <div className="timeline-content">
+              <h2>TEACHING ASSISTANT / INSTRUCTOR</h2>
+              <div className="timeline-panel">
+                <div className="timeline-heading">
+                  <h3>Matacode LLC</h3>
+                  <h5>January 2017 – January 2019</h5>
+                </div>
+                <div className="timeline-body">
+                  <p className="text-muted">
+                    Teaching Assistant at “The Complete MySQL Developer Course” (Udemy.com).
+                    Managing content, providing solutions for students in the QA section.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </Section>

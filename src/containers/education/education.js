@@ -103,7 +103,7 @@ const Education = () => {
           <div className="timeline-item">
             <div className="timeline-icon"></div>
             <div className="timeline-content right">
-              <h2>STAFFORDSHIRE UNIVERSIT - 2002</h2>
+              <h2>STAFFORDSHIRE UNIVERSITY - 2002</h2>
               <div className="timeline-panel">
                 <div className="timeline-heading">
                   <h3 className="subheading">BSc Music Technology</h3>
