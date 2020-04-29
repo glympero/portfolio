@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc2de766-a396-47e1-8fe6-804dd90a93a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/containers/education/education.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/education/education.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/about/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/about/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/work/work.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/work/work.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/workExperience/workExperience.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/workExperience/workExperience.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,9 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,7 +23,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -35,18 +34,6 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -57,17 +44,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578597647601</updated>
-      <workItem from="1578597651200" duration="437000" />
+      <workItem from="1578597651200" duration="655000" />
+      <workItem from="1586284550047" duration="1275000" />
+      <workItem from="1588151433144" duration="201000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="485" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1578597651181">
       <screen x="0" y="23" width="1920" height="1142" />
     </state>
     <state x="485" y="366" key="com.intellij.ide.util.TipDialog/0.23.1920.1142@0.23.1920.1142" timestamp="1578597651181" />
+    <state x="573" y="308" width="774" height="574" key="find.popup" timestamp="1586285510262">
+      <screen x="0" y="23" width="1920" height="1143" />
+    </state>
+    <state x="573" y="308" width="774" height="574" key="find.popup/0.23.1920.1143@0.23.1920.1143" timestamp="1586285510262" />
   </component>
 </project>

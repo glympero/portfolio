@@ -48,6 +48,5 @@
     "lint": "eslint --ignore-path .gitignore . --ext .js,.jsx",
     "analyze": "ANALYZE_BUNDLE_SIZE=true gatsby build",
     "heroku-postbuild": "gatsby build"
-    
   }
 }

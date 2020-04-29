@@ -113,12 +113,6 @@ const Work = () => {
         </Grid>
         <Grid>
       <Project
-        originalMacMockupPhotoName="boosted-macbook-mockup.png"
-        title="Boosted Boards"
-        subtitle="Web Application"
-        card={BoostedCard}
-      />
-      <Project
         originalMacMockupPhotoName="curo-macbook-mockup.png"
         title="Gender Pay Gap"
         subtitle="Web Application"
@@ -141,6 +135,12 @@ const Work = () => {
         title="Space Guardians | EU"
         subtitle="Web Application"
         card={SpaceCard}
+      />
+      <Project
+        originalMacMockupPhotoName="boosted-macbook-mockup.png"
+        title="Boosted Boards"
+        subtitle="Web Application"
+        card={BoostedCard}
       />
       <Project
         originalMacMockupPhotoName="meet-macbook-mockup.png"
@@ -237,6 +237,10 @@ const SpaceCard = (
       • Develop the interactive books with React, Redux and Turn.js library.
       <br />
       • Develop interactive mini games presented in various pages of the book.
+      <br />
+      <a href="https://spaceguardians.eu/interactive-book" target="_blank" rel="noopener noreferrer">BOOK 1 </a>
+      <br />
+      <a href="https://spaceguardians.eu/interactive-book-2" target="_blank" rel="noopener noreferrer">BOOK 2 </a>
     </CardText>
   </>
 );

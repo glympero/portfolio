@@ -343,8 +343,7 @@ const About = () => {
               Compatibility, Web Performance and Web Security, Accessibility)
               but I have also spent a large amount of time learning and
               experimenting with modern framework, languages and libraries
-              (React, Vue, Angular, Redux, GraphQL, Node, Apollo, SVG Animation,
-              GSAP).
+              (React, Angular, Redux, GraphQL, PHP, Node, Apollo, Drupal, Symphony, Wordpress).
             </Text>
             <Text>
               I constantly keep myself up to date with the latest innovation in

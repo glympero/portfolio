@@ -74,31 +74,7 @@ const Education = () => {
           <div className="timeline-item">
             <div className="timeline-icon"></div>
             <div className="timeline-content">
-              <h2>SENIOR REACT FRONTEND DEVELOPER</h2>
-              <div className="timeline-panel">
-                <div className="timeline-heading">
-                  <h3 className="subheading">Boosted Boards</h3>
-                  <h5 className="subheading">January 2019 – Today</h5>
-                </div>
-                <div className="timeline-body">
-                  <p className="text-muted">
-                    Maintaining, optimizing and adding features to Boosted Boards website.
-                  </p>
-                  <p className="text-muted">
-                    Team size: 10+
-                  </p>
-                  <p className="text-muted">
-                    Technologies: React, Apollo, GraphQL, Contentfull, Scrum
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="timeline-item">
-            <div className="timeline-icon"></div>
-            <div className="timeline-content right">
-              <h2>WEB DEVELOPER</h2>
+              <h2>SENIOR FULL STACK DEVELOPER</h2>
               <div className="timeline-panel">
                 <div className="timeline-heading">
                   <h3 className="subheading">Civic UK</h3>
@@ -118,13 +94,37 @@ const Education = () => {
                     Team size: 4.
                   </p>
                   <p className="text-muted">
-                    Technologies: React, Redux, Redux-Thunk, Flexbox, ES6, GitLab.
+                    Technologies: React, Redux, Redux-Thunk, Rest API, Drupal Modules, Wordpress Plugins, Flexbox, ES6, GitLab.
                   </p>
-                  
                 </div>
               </div>
             </div>
           </div>
+          <div className="timeline-item">
+            <div className="timeline-icon"></div>
+            <div className="timeline-content right">
+              <h2>SENIOR REACT FRONTEND DEVELOPER</h2>
+              <div className="timeline-panel">
+                <div className="timeline-heading">
+                  <h3 className="subheading">Boosted Boards</h3>
+                  <h5 className="subheading">September 2017 – September 2018</h5>
+                </div>
+                <div className="timeline-body">
+                  <p className="text-muted">
+                    Maintaining, optimizing and adding features to Boosted Boards website.
+                  </p>
+                  <p className="text-muted">
+                    Team size: 10+
+                  </p>
+                  <p className="text-muted">
+                    Technologies: React, Apollo, GraphQL, Contentfull, Shopify, Node, Scrum
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
 
           <div className="timeline-item">
             <div className="timeline-icon"></div>
@@ -135,7 +135,7 @@ const Education = () => {
                   <h3 className="subheading">
                     KeyBee Hosting 
                   </h3>
-                  <h5>February 2018 – September 2019</h5>
+                  <h5>February 2016 – September 2018</h5>
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
@@ -207,57 +207,57 @@ const Education = () => {
             </div>
           </div>
 
-          <div className="timeline-item">
-            <div className="timeline-icon"></div>
-            <div className="timeline-content right">
-              <h2>ANGULAR FRONTEND DEVELOPER</h2>
-              <div className="timeline-panel">
-                <div className="timeline-heading">
-                  <h3 className="subheading">
-                    KeyBee Hosting 
-                  </h3>
-                  <h5>February 2018 – September 2019</h5>
-                </div>
-                <div className="timeline-body">
-                  <p className="text-muted">
-                    Managing and adding new content to a published application to Apple and Play store
-                    which provides services to Airbnb hosts. Also, contributing to design decision,
-                    solutions and architectural improvements.
-                  </p>
-                  <p className="text-muted">
-                    The application includes a complex link system with Airbnb which simulates the login
-                    process (captcha, two step verification (call-text or email)) in order to get a verified
-                    account and connect it with the application.
-                  </p>
-                  <p className="text-muted">
-                    Team size: 10 (2 Developers).
-                  </p>
-                  <p className="text-muted">
-                    Technologies: React, React-Native, Redux, Redux-Thunk, ES6.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/*<div className="timeline-item">*/}
+          {/*  <div className="timeline-icon"></div>*/}
+          {/*  <div className="timeline-content right">*/}
+          {/*    <h2>ANGULAR FRONTEND DEVELOPER</h2>*/}
+          {/*    <div className="timeline-panel">*/}
+          {/*      <div className="timeline-heading">*/}
+          {/*        <h3 className="subheading">*/}
+          {/*          KeyBee Hosting */}
+          {/*        </h3>*/}
+          {/*        <h5>February 2018 – September 2019</h5>*/}
+          {/*      </div>*/}
+          {/*      <div className="timeline-body">*/}
+          {/*        <p className="text-muted">*/}
+          {/*          Managing and adding new content to a published application to Apple and Play store*/}
+          {/*          which provides services to Airbnb hosts. Also, contributing to design decision,*/}
+          {/*          solutions and architectural improvements.*/}
+          {/*        </p>*/}
+          {/*        <p className="text-muted">*/}
+          {/*          The application includes a complex link system with Airbnb which simulates the login*/}
+          {/*          process (captcha, two step verification (call-text or email)) in order to get a verified*/}
+          {/*          account and connect it with the application.*/}
+          {/*        </p>*/}
+          {/*        <p className="text-muted">*/}
+          {/*          Team size: 10 (2 Developers).*/}
+          {/*        </p>*/}
+          {/*        <p className="text-muted">*/}
+          {/*          Technologies: React, React-Native, Redux, Redux-Thunk, ES6.*/}
+          {/*        </p>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
 
-          <div className="timeline-item">
-            <div className="timeline-icon"></div>
-            <div className="timeline-content">
-              <h2>TEACHING ASSISTANT / INSTRUCTOR</h2>
-              <div className="timeline-panel">
-                <div className="timeline-heading">
-                  <h3>Matacode LLC</h3>
-                  <h5>January 2017 – January 2019</h5>
-                </div>
-                <div className="timeline-body">
-                  <p className="text-muted">
-                    Teaching Assistant at “The Complete MySQL Developer Course” (Udemy.com).
-                    Managing content, providing solutions for students in the QA section.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/*<div className="timeline-item">*/}
+          {/*  <div className="timeline-icon"></div>*/}
+          {/*  <div className="timeline-content">*/}
+          {/*    <h2>TEACHING ASSISTANT / INSTRUCTOR</h2>*/}
+          {/*    <div className="timeline-panel">*/}
+          {/*      <div className="timeline-heading">*/}
+          {/*        <h3>Matacode LLC</h3>*/}
+          {/*        <h5>January 2017 – January 2019</h5>*/}
+          {/*      </div>*/}
+          {/*      <div className="timeline-body">*/}
+          {/*        <p className="text-muted">*/}
+          {/*          Teaching Assistant at “The Complete MySQL Developer Course” (Udemy.com).*/}
+          {/*          Managing content, providing solutions for students in the QA section.*/}
+          {/*        </p>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
 
         </div>
       </div>
