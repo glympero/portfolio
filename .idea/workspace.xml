@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bc2de766-a396-47e1-8fe6-804dd90a93a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,9 @@
       <updated>1578597647601</updated>
       <workItem from="1578597651200" duration="655000" />
       <workItem from="1586284550047" duration="1275000" />
-      <workItem from="1588151433144" duration="376000" />
+      <workItem from="1588151433144" duration="431000" />
+      <workItem from="1588164464442" duration="2329000" />
+      <workItem from="1594984293915" duration="169000" />
     </task>
     <servers />
   </component>
@@ -51,13 +53,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="485" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1578597651181">
-      <screen x="0" y="23" width="1920" height="1142" />
+    <state x="1003" y="477" width="1355" height="917" key="find.popup" timestamp="1594984312330">
+      <screen x="0" y="23" width="3360" height="1823" />
     </state>
-    <state x="485" y="366" key="com.intellij.ide.util.TipDialog/0.23.1920.1142@0.23.1920.1142" timestamp="1578597651181" />
-    <state x="573" y="308" width="774" height="574" key="find.popup" timestamp="1586285510262">
-      <screen x="0" y="23" width="1920" height="1143" />
-    </state>
-    <state x="573" y="308" width="774" height="574" key="find.popup/0.23.1920.1143@0.23.1920.1143" timestamp="1586285510262" />
+    <state x="1003" y="477" width="1355" height="917" key="find.popup/-1680.863.1680.1027/0.23.3360.1823@0.23.3360.1823" timestamp="1594984312330" />
+    <state x="898" y="428" width="1213" height="817" key="find.popup/-1920.707.1920.1177/0.23.3008.1625/3008.-183.1440.2537@0.23.3008.1625" timestamp="1588164882602" />
   </component>
 </project>
