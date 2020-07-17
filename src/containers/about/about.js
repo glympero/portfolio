@@ -273,7 +273,7 @@ const About = () => {
     file: { image },
   } = useStaticQuery(graphql`
     {
-      file(relativePath: { eq: "profilepic.png" }) {
+      file(relativePath: { eq: "profilepic.jpg" }) {
         image: childImageSharp {
           fluid {
             aspectRatio
