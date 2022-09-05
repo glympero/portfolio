@@ -71,30 +71,31 @@ const Education = () => {
       </Grid>
       <div className="container">
         <div id="timeline">
-          <div className="timeline-item">
+        <div className="timeline-item">
             <div className="timeline-icon"></div>
             <div className="timeline-content">
-              <h2>SENIOR FULL STACK DEVELOPER</h2>
+              <h2>SENIOR FRONTEND DEVELOPER</h2>
               <div className="timeline-panel">
                 <div className="timeline-heading">
-                  <h3 className="subheading">Civic UK</h3>
-                  <h5>September 2018 – Today</h5>
+                  <h3 className="subheading">Netcompany Intrasoft</h3>
+                  <h5>July 2020 – Today</h5>
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                    Working on improving and expanding an internal tool for Amazon Partner Network –
-                    https://aws.amazon.com/partners/. Using React – Redux and RoR.
+                    Providing software solutions for European Union Intellectual Property Office.
                   </p>
                   <p className="text-muted">
-                    Creating the frontend in a web application for managing online car rentals in Greece
-                    which includes a landing page, the dashboard management system for customers
-                    https://admin-stage.simplybook.com/ and payments with stripe.
+                  Managing the modernization of European Union IPO including their website and 5 very
+                  complex forms for registering trademarks and designs. Technologies for forms: React,
+                  Typescript, Context API implementing the optimistic UI pattern. Technologies for
+                  website and admin: Next, Typescript, Apollo, GraphQL while using storyblok as
+                  headless CMS.
                   </p>
                   <p className="text-muted">
-                    Team size: 4.
+                    Team size: 20+.
                   </p>
                   <p className="text-muted">
-                    Technologies: React, Redux, Redux-Thunk, Rest API, Drupal Modules, Wordpress Plugins, Flexbox, ES6, GitLab.
+                    Technologies: React, Redux Toolkit, Context API, Typescript, Git, Jira, Material.
                   </p>
                 </div>
               </div>
@@ -103,6 +104,35 @@ const Education = () => {
           <div className="timeline-item">
             <div className="timeline-icon"></div>
             <div className="timeline-content right">
+              <h2>SENIOR FULL STACK DEVELOPER</h2>
+              <div className="timeline-panel">
+                <div className="timeline-heading">
+                  <h3 className="subheading">Civic UK</h3>
+                  <h5>September 2018 – July 2020</h5>
+                </div>
+                <div className="timeline-body">
+                  <p className="text-muted">
+                    Working on improving and expanding an internal tool for Amazon Partner Network –
+                    https://aws.amazon.com/partners/. Using React – Redux and Ruby on Rails.
+                  </p>
+                  <p className="text-muted">
+                    Creating the frontend in a web application for managing online car rentals in Greece
+                    which includes a landing page, the dashboard management system for customers
+                    https://admin-stage.simplybook.com/ and payments with stripe.
+                  </p>
+                  <p className="text-muted">
+                    Team size: 8.
+                  </p>
+                  <p className="text-muted">
+                    Technologies: React, Redux, Redux-Thunk, Rest API, PHP, Drupal Modules, Wordpress Plugins, Flexbox, ES6, GitLab.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="timeline-icon"></div>
+            <div className="timeline-content">
               <h2>SENIOR REACT FRONTEND DEVELOPER</h2>
               <div className="timeline-panel">
                 <div className="timeline-heading">
@@ -128,7 +158,7 @@ const Education = () => {
 
           <div className="timeline-item">
             <div className="timeline-icon"></div>
-            <div className="timeline-content">
+            <div className="timeline-content right">
               <h2>REACT-NATIVE DEVELOPER</h2>
               <div className="timeline-panel">
                 <div className="timeline-heading">
@@ -161,12 +191,12 @@ const Education = () => {
 
           <div className="timeline-item">
             <div className="timeline-icon"></div>
-            <div className="timeline-content right">
+            <div className="timeline-content">
               <h2>REACT FRONTEND DEVELOPER</h2>
               <div className="timeline-panel">
                 <div className="timeline-heading">
                   <h3>SimplyBook</h3>
-                  <h5>December 2016 – Today</h5>
+                  <h5>December 2016 – September 2018</h5>
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
@@ -190,7 +220,7 @@ const Education = () => {
 
           <div className="timeline-item">
             <div className="timeline-icon"></div>
-            <div className="timeline-content">
+            <div className="timeline-content right">
               <h2>TEACHING ASSISTANT / INSTRUCTOR</h2>
               <div className="timeline-panel">
                 <div className="timeline-heading">

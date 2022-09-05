@@ -113,6 +113,18 @@ const Work = () => {
         </Grid>
         <Grid>
       <Project
+        originalMacMockupPhotoName="eca-macbook-mockup.png"
+        title="Edinburgh College of Art"
+        subtitle="Web Application"
+        card={JupiterCard}
+      />
+      <Project
+        originalMacMockupPhotoName="jupiter-macbook-mockup.png"
+        title="Jupiter Artland"
+        subtitle="Web Application - Eshop"
+        card={JupiterCard}
+      />
+      <Project
         originalMacMockupPhotoName="curo-macbook-mockup.png"
         title="Gender Pay Gap"
         subtitle="Web Application"
@@ -154,6 +166,25 @@ const Work = () => {
 };
 
 export default Work;
+
+const JupiterCard = (
+  <>
+    <DescTitle>Jupiter Artland</DescTitle>
+    <CardText>
+      <a href="https://www.jupiterartland.org/" target="_blank" rel="noopener noreferrer">Jupiter Artland </a> 
+      is an award-winning contemporary sculpture garden located just outside Edinburgh
+      My work involved:
+      <br />
+      • Develop a custom Wordpress theme by converting Figma designs using ACF, React, Wordpress REST API.
+      <br />
+      • Develop Custom Eshop on top of WooCommerce with custom plugins, connect WooCommerce cart to React using custom REST endpoints.
+      <br />
+      • Develop Custom Ticket Management system with WooCommerce integration.
+      <br />
+      • Develop Custom QR Code functionality for managing Park tickets and Memberships.
+    </CardText>
+  </>
+);
 
 const BoostedCard = (
   <>
@@ -256,3 +287,6 @@ const MeetGreekCard = (
     </CardText>
   </>
 );
+
+
+

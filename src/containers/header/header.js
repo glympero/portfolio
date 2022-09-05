@@ -261,8 +261,8 @@ const Header = ({ show }) => {
             data-aos-duration={initialAnimationDuration}
           >
             <a
-              // href="/resume.pdf"
-              href="#"
+              href="/resume.pdf"
+              // href="#"
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
