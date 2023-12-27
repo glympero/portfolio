@@ -78,27 +78,14 @@ const Contact = () => {
         Get in touch
       </Heading>
       <Text data-aos="fade-up" data-aos-duration="350" data-aos-delay="250">
-        I am always
-        happy to consider new ideas or collaborations, or have a chat about a
-        new opportunty.
+        I am always happy to consider new ideas or collaborations, or have a
+        chat about a new opportunty.
       </Text>
       <Wrapper>
-        <LinkButton
-          href="mailto:glympe77@gmail.com?subject=Get%20in%20Touch"
-          // data-aos="fade-up"
-          // data-aos-duration="350"
-          // data-aos-delay="250"
-        >
+        <LinkButton href="mailto:glympe77@gmail.com?subject=Get%20in%20Touch">
           Mail
         </LinkButton>
-        <LinkButton
-          href="mailto:glympe77@gmail.com?subject=Get%20in%20Touch"
-          // data-aos="fade-up"
-          // data-aos-duration="350"
-          // data-aos-delay="250"
-        >
-          Phone
-        </LinkButton>
+        <LinkButton href="tel:+306944362386">Phone</LinkButton>
       </Wrapper>
     </Section>
   );
