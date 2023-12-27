@@ -1,4 +1,8 @@
-const config = require("./config");
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
+
+const config = require('./config');
 
 module.exports = {
   siteMetadata: {
@@ -9,30 +13,26 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`,
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sitemap',
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-emotion`,
+    `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        icon: 'src/images/favicon.jpg',
       },
     },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-plugin-webpack-bundle-analyzer",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        production: true,
-        disable: !process.env.ANALYZE_BUNDLE_SIZE,
-        generateStatsFiles: true,
-        analyzerMode: "static",
+        name: 'images',
+        path: './src/images/',
       },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-155140384-1",
-      },
+      __key: 'images',
     },
   ],
 };

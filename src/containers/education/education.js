@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import styled from "@emotion/styled";
-import { theme } from "styles/index";
-import { useStaticQuery, graphql } from "gatsby";
+import React from 'react';
+import styled from '@emotion/styled';
+import { theme } from 'styles/index';
 
 const { colors, fonts } = theme;
 
@@ -60,35 +59,35 @@ const Title = styled.h3`
 
 const Education = () => {
   return (
-    <Section id="education">
+    <Section id='education'>
       <Grid>
         <Title
-          data-aos="fade-down"
-          data-aos-duration="350"
-          data-aos-delay="500"
+          data-aos='fade-down'
+          data-aos-duration='350'
+          data-aos-delay='500'
         >
           Education
         </Title>
       </Grid>
-      <div className="container">
-        <div id="timeline">
-          <div className="timeline-item">
-            <div className="timeline-icon"></div>
-            <div className="timeline-content">
+      <div className='container'>
+        <div id='timeline'>
+          <div className='timeline-item'>
+            <div className='timeline-icon'></div>
+            <div className='timeline-content'>
               <h2>UNIVERSITY OF HERTFORDSHIRE - 2015</h2>
-              <div className="timeline-panel">
-                <div className="timeline-heading">
-                  <h3 className="subheading">MSc Computer Science</h3>
-                  <h5 className="subheading">First Class - With Distinction</h5>
+              <div className='timeline-panel'>
+                <div className='timeline-heading'>
+                  <h3 className='subheading'>MSc Computer Science</h3>
+                  <h5 className='subheading'>First Class - With Distinction</h5>
                 </div>
-                <div className="timeline-body">
-                  <p className="text-muted">
+                <div className='timeline-body'>
+                  <p className='text-muted'>
                     Final Project: An investigation on how the
                     Model-View-Controller architectural pattern and the Web
                     Forms model affect the development of a database-driven web-
                     based application.
                   </p>
-                  <p className="text-muted">
+                  <p className='text-muted'>
                     Modules: Introduction to Programming (100%), Object-Oriented
                     Programming (100%), Software Development Tools and Methods
                     (84%), Wireless, Mobile and Ad-hoc Networking (69%),
@@ -100,21 +99,21 @@ const Education = () => {
             </div>
           </div>
 
-          <div className="timeline-item">
-            <div className="timeline-icon"></div>
-            <div className="timeline-content right">
+          <div className='timeline-item'>
+            <div className='timeline-icon'></div>
+            <div className='timeline-content right'>
               <h2>STAFFORDSHIRE UNIVERSITY - 2002</h2>
-              <div className="timeline-panel">
-                <div className="timeline-heading">
-                  <h3 className="subheading">BSc Music Technology</h3>
+              <div className='timeline-panel'>
+                <div className='timeline-heading'>
+                  <h3 className='subheading'>BSc Music Technology</h3>
                   <h5>Upper Second-Class Honours Degree</h5>
                 </div>
-                <div className="timeline-body">
-                  <p className="text-muted">
+                <div className='timeline-body'>
+                  <p className='text-muted'>
                     Final Project: An investigation into Hardware and Software
                     for implementation into a Digital Audio Workstation.
                   </p>
-                  <p className="text-muted">
+                  <p className='text-muted'>
                     Modules: Analogue and Digital Electronics, Circuit Analysis,
                     Audio Components and Systems, Acoustics and Studio Design,
                     Digital Signal Processing, Engineering Applications, Music
@@ -128,13 +127,13 @@ const Education = () => {
             </div>
           </div>
 
-          <div className="timeline-item">
-            <div className="timeline-icon"></div>
-            <div className="timeline-content">
+          <div className='timeline-item'>
+            <div className='timeline-icon'></div>
+            <div className='timeline-content'>
               <h2>MUSIC SCHOOL OF IONIA - 1995 & 1998</h2>
-              <div className="timeline-panel">
-                <div className="timeline-heading">
-                  <h3 className="subheading">
+              <div className='timeline-panel'>
+                <div className='timeline-heading'>
+                  <h3 className='subheading'>
                     Harmony &amp; Counterpoint Diploma
                   </h3>
                   <h5>Grade - Excellent</h5>
@@ -143,12 +142,12 @@ const Education = () => {
             </div>
           </div>
 
-          <div className="timeline-item">
-            <div className="timeline-icon"></div>
-            <div className="timeline-content right">
+          <div className='timeline-item'>
+            <div className='timeline-icon'></div>
+            <div className='timeline-content right'>
               <h2>THE UNIVERSITY OF MICHIGAN - 1998</h2>
-              <div className="timeline-panel">
-                <div className="timeline-heading">
+              <div className='timeline-panel'>
+                <div className='timeline-heading'>
                   <h3>Certificate of Proficiency in English</h3>
                 </div>
               </div>
