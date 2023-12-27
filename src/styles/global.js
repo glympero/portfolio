@@ -1,5 +1,5 @@
-import { css } from "@emotion/core";
-import theme from "./theme";
+import { css } from '@emotion/react';
+import theme from './theme';
 const { colors, fonts } = theme;
 export default css`
   /* Box sizing rules */
@@ -146,24 +146,27 @@ export default css`
   ::-webkit-scrollbar-thumb:hover {
     background: ${colors.brightYellow};
   }
-  #timeline .timeline-item:after, #timeline .timeline-item:before {
+  #timeline .timeline-item:after,
+  #timeline .timeline-item:before {
     content: '';
     display: block;
     width: 100%;
     clear: both;
   }
-  
-  *, *:before, *:after {
+
+  *,
+  *:before,
+  *:after {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
   }
-  
+
   .container {
     max-width: 1100px;
     margin: 0 auto;
   }
-  
+
   #timeline {
     width: 100%;
     margin: 30px auto;
@@ -175,7 +178,7 @@ export default css`
     transition: all 0.4s ease;
   }
   #timeline:before {
-    content: "";
+    content: '';
     width: 3px;
     height: 100%;
     background: ${colors.brightYellow};
@@ -184,7 +187,7 @@ export default css`
     position: absolute;
   }
   #timeline:after {
-    content: "";
+    content: '';
     clear: both;
     display: table;
     width: 100%;
@@ -249,7 +252,7 @@ export default css`
     height: 0;
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
-    border-left: 7px solid ${colors.grey};;
+    border-left: 7px solid ${colors.grey};
   }
   #timeline .timeline-item .timeline-content.right {
     float: right;
@@ -276,10 +279,10 @@ export default css`
       font-size: 1.4rem;
       line-height: 2rem;
       padding-bottom: 10px;
-      font-family: ${fonts.secondary}
+      font-family: ${fonts.secondary};
     }
   }
-  
+
   @media screen and (max-width: 768px) {
     #timeline {
       margin: 30px;
@@ -293,7 +296,8 @@ export default css`
       width: 90%;
       float: right;
     }
-    #timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before {
+    #timeline .timeline-item .timeline-content:before,
+    #timeline .timeline-item .timeline-content.right:before {
       left: 10%;
       margin-left: -6px;
       border-left: 0;

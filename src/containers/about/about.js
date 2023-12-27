@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import Img from "gatsby-image";
-import { css } from "@emotion/core";
-import styled from "@emotion/styled";
-import { theme } from "styles/index";
-import { useStaticQuery, graphql } from "gatsby";
+import React, { useState } from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
+import { theme } from 'styles/index';
 
 const { colors, fonts } = theme;
 
@@ -140,7 +139,7 @@ const Figure = styled.figure`
   grid-column: 2/3;
 
   /* The AOS custom animation needs to be in a parent container */
-  [data-aos="about-frame"] {
+  [data-aos='about-frame'] {
     transform: rotate(-90deg);
 
     &.aos-animate {
@@ -227,8 +226,8 @@ const IntroButton = styled.button`
   grid-row: 1/2;
   grid-column: 1/2;
   border-bottom: 2px solid
-    ${props =>
-      props.activeText === INTRO ? colors.brightYellow : "transparent"};
+    ${(props) =>
+      props.activeText === INTRO ? colors.brightYellow : 'transparent'};
 
   @media screen and (max-width: 600px) {
     grid-column: 1/2;
@@ -241,8 +240,8 @@ const JourneyButton = styled.button`
   grid-row: 2/3;
   grid-column: 1/2;
   border-bottom: 2px solid
-    ${props =>
-      props.activeText === JOURNEY ? colors.brightYellow : "transparent"};
+    ${(props) =>
+      props.activeText === JOURNEY ? colors.brightYellow : 'transparent'};
 
   @media screen and (max-width: 600px) {
     grid-column: 2/3;
@@ -255,56 +254,42 @@ const PresentButton = styled.button`
   grid-row: 3/4;
   grid-column: 1/2;
   border-bottom: 2px solid
-    ${props =>
-      props.activeText === LEARNING ? colors.brightYellow : "transparent"};
+    ${(props) =>
+      props.activeText === LEARNING ? colors.brightYellow : 'transparent'};
   @media screen and (max-width: 600px) {
     grid-column: 3/4;
     grid-row: 1/2;
   }
 `;
 
-const INTRO = "INTRO";
-const JOURNEY = "JOURNEY";
-const LEARNING = "LEARNING";
+const INTRO = 'INTRO';
+const JOURNEY = 'JOURNEY';
+const LEARNING = 'LEARNING';
 
 const About = () => {
   const [activeText, setActiveText] = useState(INTRO);
-  const {
-    file: { image },
-  } = useStaticQuery(graphql`
-    {
-      file(relativePath: { eq: "profilepic.jpg" }) {
-        image: childImageSharp {
-          fluid {
-            aspectRatio
-            base64
-            originalImg
-            originalName
-            presentationHeight
-            presentationWidth
-            sizes
-            src
-            srcSet
-            srcSetWebp
-            srcWebp
-            tracedSVG
-          }
-        }
-      }
-    }
-  `);
 
-  const renderActiveParagraph = tab => {
+  const renderActiveParagraph = (tab) => {
     switch (tab) {
       case INTRO:
         return (
           <TextWrapper>
-              <Text>
-              I attended the University of Staffordshire, achieving a <HighLight>Bachelor's degree in Music Technology</HighLight> and the University of Herfordshire, achieving a <HighLight>Master's degree with distinction in Computer Science</HighLight>. 
-              </Text>
-              <Text>
-              I appreciate a good challenge, always achieve my goals and meet or exceed deadlines. I work well within a team environment and I have the dedication and work ethic to work solo. I take pride in maintaining high standards and look forward to future opportunities.
-              </Text>
+            <Text>
+              I attended the University of Staffordshire, achieving a{' '}
+              <HighLight>Bachelor's degree in Music Technology</HighLight> and
+              the University of Herfordshire, achieving a{' '}
+              <HighLight>
+                Master's degree with distinction in Computer Science
+              </HighLight>
+              .
+            </Text>
+            <Text>
+              I appreciate a good challenge, always achieve my goals and meet or
+              exceed deadlines. I work well within a team environment and I have
+              the dedication and work ethic to work solo. I take pride in
+              maintaining high standards and look forward to future
+              opportunities.
+            </Text>
           </TextWrapper>
         );
       case JOURNEY:
@@ -313,8 +298,8 @@ const About = () => {
             <Text>
               I have a strong understanding of JavaScript and the way the
               language works under the hood, along with an excellent
-              understanding of how Web Browser works, which allows me to
-              quickly adapt to new tools and technologies.
+              understanding of how Web Browser works, which allows me to quickly
+              adapt to new tools and technologies.
             </Text>
             <Text>
               Furthermore, I work with a variety of framework and libraries and
@@ -343,7 +328,8 @@ const About = () => {
               Compatibility, Web Performance and Web Security, Accessibility)
               but I have also spent a large amount of time learning and
               experimenting with modern framework, languages and libraries
-              (React, Angular, Redux, GraphQL, PHP, Node, Apollo, Drupal, Symphony, Wordpress).
+              (React, Angular, Redux, GraphQL, PHP, Node, Apollo, Drupal,
+              Symphony, Wordpress).
             </Text>
             <Text>
               I constantly keep myself up to date with the latest innovation in
@@ -354,7 +340,7 @@ const About = () => {
             <Text>
               <HighLight>
                 I strongly believe that learning is a life-long process that is
-                essential to an Engineer’s success{" "}
+                essential to an Engineer’s success{' '}
               </HighLight>
               in delivering software the reflects the best standard of the
               industry
@@ -362,65 +348,65 @@ const About = () => {
           </TextWrapper>
         );
       default:
-        return "Error retrieving the selected option, reload the page ...";
+        return 'Error retrieving the selected option, reload the page ...';
     }
   };
 
   return (
-    <div id="about">
+    <div id='about'>
       <GridTitle>
-      <Title
-          data-aos="fade-down"
-          data-aos-duration="350"
-          data-aos-delay="500"
+        <Title
+          data-aos='fade-down'
+          data-aos-duration='350'
+          data-aos-delay='500'
         >
           About me
         </Title>
       </GridTitle>
-      <Section >
-      
-      
-      <Grid>
-        
-        <AboutGrid>
-          {renderActiveParagraph(activeText)}
-          <IntroButton
-            onClick={() => setActiveText(INTRO)}
-            activeText={activeText}
-          >
-            Intro
-          </IntroButton>
-          <JourneyButton
-            onClick={() => setActiveText(JOURNEY)}
-            activeText={activeText}
-          >
-            Skills
-          </JourneyButton>
-          <PresentButton
-            onClick={() => setActiveText(LEARNING)}
-            activeText={activeText}
-          >
-            Learning
-          </PresentButton>
-        </AboutGrid>
-        <Figure>
-          <ImgContainer>
-            <Frame
-              data-aos="about-frame"
-              data-aos-duration="750"
-              data-aos-delay="300"
-            />
-            <Img
-              fluid={image.fluid}
-              alt="Profile Picture of Georgios Lymperopoulos"
-              css={imgeStyle}
-            />
-          </ImgContainer>
-        </Figure>
-      </Grid>
-    </Section>
+      <Section>
+        <Grid>
+          <AboutGrid>
+            {renderActiveParagraph(activeText)}
+            <IntroButton
+              onClick={() => setActiveText(INTRO)}
+              activeText={activeText}
+            >
+              Intro
+            </IntroButton>
+            <JourneyButton
+              onClick={() => setActiveText(JOURNEY)}
+              activeText={activeText}
+            >
+              Skills
+            </JourneyButton>
+            <PresentButton
+              onClick={() => setActiveText(LEARNING)}
+              activeText={activeText}
+            >
+              Learning
+            </PresentButton>
+          </AboutGrid>
+          <Figure>
+            <ImgContainer>
+              <Frame
+                data-aos='about-frame'
+                data-aos-duration='750'
+                data-aos-delay='300'
+              />
+              <StaticImage
+                src='../../images/profilepic.jpg'
+                alt='Profile Picture of Georgios Lymperopoulos'
+                placeholder='blurred'
+                layout='fixed'
+                width={250}
+                height={302}
+                css={imgeStyle}
+              />
+            </ImgContainer>
+          </Figure>
+        </Grid>
+      </Section>
     </div>
-    
   );
 };
 

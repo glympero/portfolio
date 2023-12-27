@@ -1,8 +1,7 @@
-import React from "react";
-import { Link } from "gatsby";
-import { css } from "@emotion/core";
-import styled from "@emotion/styled";
-import { theme } from "styles";
+import React from 'react';
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
+import { theme } from 'styles';
 
 const { flexCenter, colors, fonts } = theme;
 
@@ -32,11 +31,11 @@ const logo = css`
   font-family: ${fonts.secondary};
 `;
 
-export const Logo = props => {
+export const Logo = (props) => {
   return (
-    <LogoBox ref={props.logoRef} id="logo" {...props}>
+    <LogoBox ref={props.logoRef} id='logo' {...props}>
       <LogoContainer>
-        <a href="/" aria-label="navigate to home page" css={logo}>
+        <a href='/' aria-label='navigate to home page' css={logo}>
           GL
         </a>
       </LogoContainer>
