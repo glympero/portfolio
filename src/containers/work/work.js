@@ -113,6 +113,30 @@ const Work = () => {
         </Grid>
         <Grid>
       <Project
+        originalMacMockupPhotoName="eutm-macbook-mockup.png"
+        title="Eutm Efiling"
+        subtitle="Web Application"
+        card={EutmCard}
+      />
+      <Project
+        originalMacMockupPhotoName="easy-macbook-mockup.png"
+        title="Easy Efiling"
+        subtitle="Web Application"
+        card={EasyCard}
+      />
+      <Project
+        originalMacMockupPhotoName="eca-macbook-mockup.png"
+        title="Edinburgh College of Art"
+        subtitle="Web Application"
+        card={EcaCard}
+      />
+      <Project
+        originalMacMockupPhotoName="jupiter-macbook-mockup.png"
+        title="Jupiter Artland"
+        subtitle="Web Application - Eshop"
+        card={JupiterCard}
+      />
+      <Project
         originalMacMockupPhotoName="curo-macbook-mockup.png"
         title="Gender Pay Gap"
         subtitle="Web Application"
@@ -155,6 +179,74 @@ const Work = () => {
 
 export default Work;
 
+const EutmCard = (
+  <>
+  <DescTitle>Eutm Filing form</DescTitle>
+  <CardText>
+    <a href="https://euipo.europa.eu/eutm-efiling/" target="_blank" rel="noopener noreferrer">Eutm Filing form </a> 
+    is a new eform that allows filing trade mark applications in a guided and accessible way. With a new and fresh interface based on the feedback received from our users, the form is adapted to all type of devices and presents an improved performance and a set of services with the aim of reducing the possible deficiencies of during the application.
+    The new electronic form which will replace two of the three existing forms for trade marks: the 5-steps form and the advanced form. Tailored for intellectual property experts when handling straightforward and complex cases
+    My work involved:
+    <br />
+    • Develop a React application with Typescript by implementing the Optimistic UI pattern. (SWR + Context API)
+    <br />
+    • Develop complex nested forms (for multiple applicants - representatives and claims)
+    <br />
+    • Mocking (msw) for easier development.
+    <br />
+    • Unit and end to end tests.
+  </CardText></>
+)
+
+
+const EasyCard = (
+  <>
+  <DescTitle>Easy Filing form</DescTitle>
+  <CardText>
+    <a href="https://euipo.europa.eu/ohimportal/en/easy-filing" target="_blank" rel="noopener noreferrer">Easy Filing form </a> 
+    is a new, mobile-friendly application combining artificial intelligence and the latest technologies to simplify e-filing for trademarks. Designed for SMEs and individuals within the European Economic Area, without a legal representative.
+    My work involved:
+    <br />
+    • Develop a React application with Typescript by implementing the Optimistic UI pattern. (SWR + Context API)
+    <br />
+    • Mocking (msw) for easier development.
+    <br />
+    • Unit and end to end tests.
+  </CardText></>
+)
+const EcaCard = (
+  <>
+  <DescTitle>Jupiter Artland</DescTitle>
+  <CardText>
+    <a href="https://www.graduateshow.eca.ed.ac.uk/" target="_blank" rel="noopener noreferrer">Edinburgh College of Art Graduate Show 2022 </a> 
+    is a website where you can discover the next generation of creative talent and view the culmination of our graduating students’ time at ECA.
+    My work involved:
+    <br />
+    • Develop a custom Drupal theme by converting Figma designs using Paragraphs, React.
+    <br />
+    • Build custom rest api's using drupal views.
+  </CardText></>
+)
+
+const JupiterCard = (
+  <>
+    <DescTitle>Jupiter Artland</DescTitle>
+    <CardText>
+      <a href="https://www.jupiterartland.org/" target="_blank" rel="noopener noreferrer">Jupiter Artland </a> 
+      is an award-winning contemporary sculpture garden located just outside Edinburgh
+      My work involved:
+      <br />
+      • Develop a custom Wordpress theme by converting Figma designs using ACF, React, Wordpress REST API.
+      <br />
+      • Develop Custom Eshop on top of WooCommerce with custom plugins, connect WooCommerce cart to React using custom REST endpoints.
+      <br />
+      • Develop Custom Ticket Management system with WooCommerce integration.
+      <br />
+      • Develop Custom QR Code functionality for managing Park tickets and Memberships.
+    </CardText>
+  </>
+);
+
 const BoostedCard = (
   <>
     <DescTitle>Boosted Boards</DescTitle>
@@ -180,8 +272,7 @@ const CuroCard = (
   <>
     <DescTitle>Gender Pay Gap | Curo</DescTitle>
     <CardText>
-      <a href="https://curogpg.com/" target="_blank" rel="noopener noreferrer">CuroGPG </a> 
-      is a complete solution for UK gender pay gap compliance, insights and forecasts.
+      CuroGPG is a complete solution for UK gender pay gap compliance, insights and forecasts.
       This simple self service solution helps support companies who need to comply with the Gender Pay Gap Information Regulations and wish to understand the issues driving their Pay Gap.
       My work involved:
       <br />
@@ -256,3 +347,6 @@ const MeetGreekCard = (
     </CardText>
   </>
 );
+
+
+

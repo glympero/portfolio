@@ -122,7 +122,7 @@ const Hero = () => {
           data-aos-delay={delay()}
           data-aos-duration={initialAnimationDuration}
         >
-          I love Javascript, React, React-Native, Redux and Angular!
+          I love Javascript, React, NodeJS, React-Native, Redux and Angular!
         </SubTitle>
         <Text
           data-aos="fade-right"
