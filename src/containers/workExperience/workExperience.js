@@ -71,10 +71,10 @@ const Education = () => {
       </Grid>
       <div className="container">
         <div id="timeline">
-        <div className="timeline-item">
+          <div className="timeline-item">
             <div className="timeline-icon"></div>
             <div className="timeline-content">
-              <h2>SENIOR FRONTEND DEVELOPER</h2>
+              <h2>SENIOR FULL STACK DEVELOPER - TEAM LEAD</h2>
               <div className="timeline-panel">
                 <div className="timeline-heading">
                   <h3 className="subheading">Netcompany Intrasoft</h3>
@@ -82,20 +82,22 @@ const Education = () => {
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                    Providing software solutions for European Union Intellectual Property Office.
+                    Providing software solutions for European Union Intellectual
+                    Property Office.
                   </p>
                   <p className="text-muted">
-                  Managing the modernization of European Union IPO including their website and 5 very
-                  complex forms for registering trademarks and designs. Technologies for forms: React,
-                  Typescript, Context API implementing the optimistic UI pattern. Technologies for
-                  website and admin: Next, Typescript, Apollo, GraphQL while using storyblok as
-                  headless CMS.
+                    Managing the modernization of European Union IPO including
+                    their website and 5 very complex forms for registering
+                    trademarks and designs. Technologies for forms: React,
+                    Typescript, Context API implementing the optimistic UI
+                    pattern. Technologies for website and admin: Next,
+                    Typescript, Apollo, GraphQL while using storyblok as
+                    headless CMS.
                   </p>
+                  <p className="text-muted">Team size: 20+.</p>
                   <p className="text-muted">
-                    Team size: 20+.
-                  </p>
-                  <p className="text-muted">
-                    Technologies: React, Redux Toolkit, Context API, Typescript, Git, Jira, Material.
+                    Technologies: React, Redux Toolkit, Context API, Typescript,
+                    Git, Jira, Material.
                   </p>
                 </div>
               </div>
@@ -112,19 +114,21 @@ const Education = () => {
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                    Working on improving and expanding an internal tool for Amazon Partner Network –
-                    https://aws.amazon.com/partners/. Using React – Redux and Ruby on Rails.
+                    Working on improving and expanding an internal tool for
+                    Amazon Partner Network – https://aws.amazon.com/partners/.
+                    Using React – Redux and Ruby on Rails.
                   </p>
                   <p className="text-muted">
-                    Creating the frontend in a web application for managing online car rentals in Greece
-                    which includes a landing page, the dashboard management system for customers
-                    https://admin-stage.simplybook.com/ and payments with stripe.
+                    Creating the frontend in a web application for managing
+                    online car rentals in Greece which includes a landing page,
+                    the dashboard management system for customers
+                    https://admin-stage.simplybook.com/ and payments with
+                    stripe.
                   </p>
+                  <p className="text-muted">Team size: 8.</p>
                   <p className="text-muted">
-                    Team size: 8.
-                  </p>
-                  <p className="text-muted">
-                    Technologies: React, Redux, Redux-Thunk, Rest API, PHP, Drupal Modules, Wordpress Plugins, Flexbox, ES6, GitLab.
+                    Technologies: React, Redux, Redux-Thunk, Rest API, PHP,
+                    Drupal Modules, Wordpress Plugins, Flexbox, ES6, GitLab.
                   </p>
                 </div>
               </div>
@@ -137,24 +141,24 @@ const Education = () => {
               <div className="timeline-panel">
                 <div className="timeline-heading">
                   <h3 className="subheading">Boosted Boards</h3>
-                  <h5 className="subheading">September 2017 – September 2018</h5>
+                  <h5 className="subheading">
+                    September 2017 – September 2018
+                  </h5>
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                    Maintaining, optimizing and adding features to Boosted Boards website.
+                    Maintaining, optimizing and adding features to Boosted
+                    Boards website.
                   </p>
+                  <p className="text-muted">Team size: 10+</p>
                   <p className="text-muted">
-                    Team size: 10+
-                  </p>
-                  <p className="text-muted">
-                    Technologies: React, Apollo, GraphQL, Contentfull, Shopify, Node, Scrum
+                    Technologies: React, Apollo, GraphQL, Contentfull, Shopify,
+                    Node, Scrum
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
-
 
           <div className="timeline-item">
             <div className="timeline-icon"></div>
@@ -162,25 +166,23 @@ const Education = () => {
               <h2>REACT-NATIVE DEVELOPER</h2>
               <div className="timeline-panel">
                 <div className="timeline-heading">
-                  <h3 className="subheading">
-                    KeyBee Hosting 
-                  </h3>
+                  <h3 className="subheading">KeyBee Hosting</h3>
                   <h5>February 2016 – September 2018</h5>
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                    Managing and adding new content to a published application to Apple and Play store
-                    which provides services to Airbnb hosts. Also, contributing to design decision,
-                    solutions and architectural improvements.
+                    Managing and adding new content to a published application
+                    to Apple and Play store which provides services to Airbnb
+                    hosts. Also, contributing to design decision, solutions and
+                    architectural improvements.
                   </p>
                   <p className="text-muted">
-                    The application includes a complex link system with Airbnb which simulates the login
-                    process (captcha, two step verification (call-text or email)) in order to get a verified
-                    account and connect it with the application.
+                    The application includes a complex link system with Airbnb
+                    which simulates the login process (captcha, two step
+                    verification (call-text or email)) in order to get a
+                    verified account and connect it with the application.
                   </p>
-                  <p className="text-muted">
-                    Team size: 10 (2 Developers).
-                  </p>
+                  <p className="text-muted">Team size: 10 (2 Developers).</p>
                   <p className="text-muted">
                     Technologies: React, React-Native, Redux, Redux-Thunk, ES6.
                   </p>
@@ -200,18 +202,20 @@ const Education = () => {
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                    Contributing to design decision, solutions and architectural improvements.
+                    Contributing to design decision, solutions and architectural
+                    improvements.
                   </p>
                   <p className="text-muted">
-                    Creating the frontend in a web application for managing online car rentals in Greece
-                    which includes a landing page, the dashboard management system for customers
-                    https://admin-stage.simplybook.com/ and payments with stripe.
+                    Creating the frontend in a web application for managing
+                    online car rentals in Greece which includes a landing page,
+                    the dashboard management system for customers
+                    https://admin-stage.simplybook.com/ and payments with
+                    stripe.
                   </p>
+                  <p className="text-muted">Team size: 4</p>
                   <p className="text-muted">
-                    Team size: 4
-                  </p>
-                  <p className="text-muted">
-                    Technologies: React, Redux, Redux-Thunk, Flexbox, ES6, GitLab.
+                    Technologies: React, Redux, Redux-Thunk, Flexbox, ES6,
+                    GitLab.
                   </p>
                 </div>
               </div>
@@ -229,8 +233,9 @@ const Education = () => {
                 </div>
                 <div className="timeline-body">
                   <p className="text-muted">
-                    Teaching Assistant at “The Complete MySQL Developer Course” (Udemy.com).
-                    Managing content, providing solutions for students in the QA section.
+                    Teaching Assistant at “The Complete MySQL Developer Course”
+                    (Udemy.com). Managing content, providing solutions for
+                    students in the QA section.
                   </p>
                 </div>
               </div>
@@ -288,7 +293,6 @@ const Education = () => {
           {/*    </div>*/}
           {/*  </div>*/}
           {/*</div>*/}
-
         </div>
       </div>
     </Section>

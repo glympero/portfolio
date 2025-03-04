@@ -299,12 +299,22 @@ const About = () => {
       case INTRO:
         return (
           <TextWrapper>
-              <Text>
-              I attended the University of Staffordshire, achieving a <HighLight>Bachelor's degree in Music Technology</HighLight> and the University of Herfordshire, achieving a <HighLight>Master's degree with distinction in Computer Science</HighLight>. 
-              </Text>
-              <Text>
-              I appreciate a good challenge, always achieve my goals and meet or exceed deadlines. I work well within a team environment and I have the dedication and work ethic to work solo. I take pride in maintaining high standards and look forward to future opportunities.
-              </Text>
+            <Text>
+              I attended the University of Staffordshire, achieving a{" "}
+              <HighLight>Bachelor's degree in Music Technology</HighLight> and
+              the University of Herfordshire, achieving a{" "}
+              <HighLight>
+                Master's degree with distinction in Computer Science
+              </HighLight>
+              .
+            </Text>
+            <Text>
+              I appreciate a good challenge, always achieve my goals and meet or
+              exceed deadlines. I work well within a team environment and I have
+              the dedication and work ethic to work solo. I take pride in
+              maintaining high standards and look forward to future
+              opportunities.
+            </Text>
           </TextWrapper>
         );
       case JOURNEY:
@@ -313,8 +323,8 @@ const About = () => {
             <Text>
               I have a strong understanding of JavaScript and the way the
               language works under the hood, along with an excellent
-              understanding of how Web Browser works, which allows me to
-              quickly adapt to new tools and technologies.
+              understanding of how Web Browser works, which allows me to quickly
+              adapt to new tools and technologies.
             </Text>
             <Text>
               Furthermore, I work with a variety of framework and libraries and
@@ -331,6 +341,17 @@ const About = () => {
               Testing and I am keen to learn and use Cypress in a commercial
               environment.
             </Text>
+            <Text>
+              My expertise extends to the backend domain where I've developed
+              strong skills in C# and the .NET ecosystem. I've built and
+              maintained robust RESTful APIs using ASP.NET Core, with a focus on
+              performance optimization and secure architecture. I'm proficient
+              in database design and management with SQL, implementing efficient
+              queries, stored procedures, and maintaining data integrity through
+              proper normalization and indexing strategies. This full-stack
+              capability allows me to deliver end-to-end solutions with seamless
+              integration between front and backend systems.
+            </Text>
           </TextWrapper>
         );
       case LEARNING:
@@ -343,7 +364,8 @@ const About = () => {
               Compatibility, Web Performance and Web Security, Accessibility)
               but I have also spent a large amount of time learning and
               experimenting with modern framework, languages and libraries
-              (React, Angular, Redux, GraphQL, PHP, Node, Apollo, Drupal, Symphony, Wordpress).
+              (React, Angular, Redux, GraphQL, PHP, Node, Apollo, Drupal,
+              Symphony, Wordpress).
             </Text>
             <Text>
               I constantly keep myself up to date with the latest innovation in
@@ -369,7 +391,7 @@ const About = () => {
   return (
     <div id="about">
       <GridTitle>
-      <Title
+        <Title
           data-aos="fade-down"
           data-aos-duration="350"
           data-aos-delay="500"
@@ -377,50 +399,46 @@ const About = () => {
           About me
         </Title>
       </GridTitle>
-      <Section >
-      
-      
-      <Grid>
-        
-        <AboutGrid>
-          {renderActiveParagraph(activeText)}
-          <IntroButton
-            onClick={() => setActiveText(INTRO)}
-            activeText={activeText}
-          >
-            Intro
-          </IntroButton>
-          <JourneyButton
-            onClick={() => setActiveText(JOURNEY)}
-            activeText={activeText}
-          >
-            Skills
-          </JourneyButton>
-          <PresentButton
-            onClick={() => setActiveText(LEARNING)}
-            activeText={activeText}
-          >
-            Learning
-          </PresentButton>
-        </AboutGrid>
-        <Figure>
-          <ImgContainer>
-            <Frame
-              data-aos="about-frame"
-              data-aos-duration="750"
-              data-aos-delay="300"
-            />
-            <Img
-              fluid={image.fluid}
-              alt="Profile Picture of Georgios Lymperopoulos"
-              css={imgeStyle}
-            />
-          </ImgContainer>
-        </Figure>
-      </Grid>
-    </Section>
+      <Section>
+        <Grid>
+          <AboutGrid>
+            {renderActiveParagraph(activeText)}
+            <IntroButton
+              onClick={() => setActiveText(INTRO)}
+              activeText={activeText}
+            >
+              Intro
+            </IntroButton>
+            <JourneyButton
+              onClick={() => setActiveText(JOURNEY)}
+              activeText={activeText}
+            >
+              Skills
+            </JourneyButton>
+            <PresentButton
+              onClick={() => setActiveText(LEARNING)}
+              activeText={activeText}
+            >
+              Learning
+            </PresentButton>
+          </AboutGrid>
+          <Figure>
+            <ImgContainer>
+              <Frame
+                data-aos="about-frame"
+                data-aos-duration="750"
+                data-aos-delay="300"
+              />
+              <Img
+                fluid={image.fluid}
+                alt="Profile Picture of Georgios Lymperopoulos"
+                css={imgeStyle}
+              />
+            </ImgContainer>
+          </Figure>
+        </Grid>
+      </Section>
     </div>
-    
   );
 };
 

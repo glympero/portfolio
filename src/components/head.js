@@ -33,9 +33,10 @@ function Head({ description, lang, meta, title }) {
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: "en",
       }}
       title={metaTitle}
+      dir="ltr"
       meta={[
         {
           name: `description`,
@@ -75,6 +76,8 @@ function Head({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
+      <meta http-equiv="content-language" content="en"></meta>
+      <meta name="google" content="notranslate" />
       <link rel="shortcut icon" href={favicon} />
 
       <link

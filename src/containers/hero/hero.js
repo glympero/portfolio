@@ -122,7 +122,9 @@ const Hero = () => {
           data-aos-delay={delay()}
           data-aos-duration={initialAnimationDuration}
         >
-          I love Javascript, React, NodeJS, React-Native, Redux and Angular!
+          I love working with Javascript and its ecosystem (React, NestJS,
+          React-Native, VueJS) as well as C#, .NET, building robust APIs, and
+          SQL database development!
         </SubTitle>
         <Text
           data-aos="fade-right"
@@ -130,7 +132,8 @@ const Hero = () => {
           data-aos-delay={delay()}
           data-aos-duration={initialAnimationDuration}
         >
-          I also enjoy working with PHP, Drupal (custom themes and modules), Wordpress (custom themes and plugins) and Python.
+          I also enjoy working with PHP, Drupal (custom themes and modules),
+          Wordpress (custom themes and plugins) and Python.
         </Text>
         <LinkButton
           href="#contact"
