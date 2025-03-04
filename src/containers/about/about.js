@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import Img from "gatsby-image";
-import { css } from "@emotion/core";
+import { StaticImage } from "gatsby-plugin-image";
+import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { theme } from "styles/index";
-import { useStaticQuery, graphql } from "gatsby";
 
 const { colors, fonts } = theme;
 
@@ -269,30 +268,6 @@ const LEARNING = "LEARNING";
 
 const About = () => {
   const [activeText, setActiveText] = useState(INTRO);
-  const {
-    file: { image },
-  } = useStaticQuery(graphql`
-    {
-      file(relativePath: { eq: "profilepic.jpg" }) {
-        image: childImageSharp {
-          fluid {
-            aspectRatio
-            base64
-            originalImg
-            originalName
-            presentationHeight
-            presentationWidth
-            sizes
-            src
-            srcSet
-            srcSetWebp
-            srcWebp
-            tracedSVG
-          }
-        }
-      }
-    }
-  `);
 
   const renderActiveParagraph = tab => {
     switch (tab) {
@@ -429,9 +404,13 @@ const About = () => {
                 data-aos-duration="750"
                 data-aos-delay="300"
               />
-              <Img
-                fluid={image.fluid}
+              <StaticImage
+                src="../../images/profilepic.jpg"
                 alt="Profile Picture of Georgios Lymperopoulos"
+                placeholder="blurred"
+                layout="fixed"
+                width={250}
+                height={302}
                 css={imgeStyle}
               />
             </ImgContainer>

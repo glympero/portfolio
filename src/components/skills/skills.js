@@ -1,14 +1,14 @@
-import React from "react";
-import { css } from "@emotion/core";
-import JSIcon from "components/icons/javascript";
-import ReactIcon from "components/icons/react";
-import ReduxIcon from "components/icons/redux";
-import GraphQLIcon from "components/icons/graphql";
-import ApolloIcon from "components/icons/apollo";
-import NodeIcon from "components/icons/node";
-import ProgressBar from "components/progress-bar/progress-bar";
-import GatsbyIcon from "components/icons/gatsby";
-import CSSIcon from "components/icons/css3";
+import React from 'react';
+import { css } from '@emotion/react';
+import JSIcon from 'components/icons/javascript';
+import ReactIcon from 'components/icons/react';
+import ReduxIcon from 'components/icons/redux';
+import GraphQLIcon from 'components/icons/graphql';
+import ApolloIcon from 'components/icons/apollo';
+import NodeIcon from 'components/icons/node';
+import ProgressBar from 'components/progress-bar/progress-bar';
+import GatsbyIcon from 'components/icons/gatsby';
+import CSSIcon from 'components/icons/css3';
 
 const section = css`
   max-width: 1000px;
@@ -60,22 +60,22 @@ const Skills = () => {
     <section css={section}>
       {/* <h4 css={title}>Tech Skills</h4> */}
       <div css={skillContainer}>
-        <JSIcon width="44px" height="auto" />
-        <ProgressBar level={85} description="JavaScript ES9+" />
-        <ReactIcon width="55px" height="auto" />
-        <ProgressBar level={90} description="React" />
-        <ReduxIcon width="40px" height="auto" />
-        <ProgressBar level={82} description="Redux" />
-        <GraphQLIcon width="41px" height="auto" />
-        <ProgressBar level={71} description="GraphQL" />
+        <JSIcon width='44px' height='auto' />
+        <ProgressBar level={85} description='JavaScript ES9+' />
+        <ReactIcon width='55px' height='auto' />
+        <ProgressBar level={90} description='React' />
+        <ReduxIcon width='40px' height='auto' />
+        <ProgressBar level={82} description='Redux' />
+        <GraphQLIcon width='41px' height='auto' />
+        <ProgressBar level={71} description='GraphQL' />
         <ApolloIcon />
-        <ProgressBar level={65} description="Apollo" />
-        <NodeIcon width="55px" height="auto" />
-        <ProgressBar level={62} description="Node" />
-        <CSSIcon width="44px" height="auto" />
-        <ProgressBar level={87} description="CSS" />
+        <ProgressBar level={65} description='Apollo' />
+        <NodeIcon width='55px' height='auto' />
+        <ProgressBar level={62} description='Node' />
+        <CSSIcon width='44px' height='auto' />
+        <ProgressBar level={87} description='CSS' />
         <GatsbyIcon />
-        <ProgressBar level={78} description="Gatsby.js" />
+        <ProgressBar level={78} description='Gatsby.js' />
       </div>
     </section>
   );

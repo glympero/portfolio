@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { css } from "@emotion/core";
-import styled from "@emotion/styled";
-import { CSSTransition } from "react-transition-group";
-import { theme } from "styles";
-import Logo from "components/logo/logo";
-import Hamburger from "components/hamburger/hamburger";
-import Backdrop from "components/backdrop/backdrop";
+import React, { useState } from 'react';
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
+import { CSSTransition } from 'react-transition-group';
+import { theme } from 'styles';
+import Logo from 'components/logo/logo';
+import Hamburger from 'components/hamburger/hamburger';
+import Backdrop from 'components/backdrop/backdrop';
 
 const { fonts, colors, flexCenter, initialAnimationDuration, delay } = theme;
 
@@ -16,7 +16,7 @@ const HeaderTag = styled.header`
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: ${props => (props.show ? "0" : "0")};
+  top: ${(props) => (props.show ? '0' : '0')};
   z-index: 1000;
   box-shadow: none;
   background: ${colors.maastrichtBlue};
@@ -195,76 +195,76 @@ const Header = ({ show }) => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
   const onHamburgerClick = () =>
-    setSideDrawerOpen(previousValue => !previousValue);
+    setSideDrawerOpen((previousValue) => !previousValue);
 
   const closeSideBar = () => setSideDrawerOpen(false);
 
   return (
     <HeaderTag show={show}>
       <nav css={nav}>
-        <Logo data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200" />
+        <Logo data-aos='zoom-in' data-aos-duration='500' data-aos-delay='200' />
         <ul css={ul}>
           <li
-            data-aos="fade-down"
-            data-aos-easing="ease-in-cubic"
+            data-aos='fade-down'
+            data-aos-easing='ease-in-cubic'
             data-aos-delay={delay(800)}
             data-aos-duration={initialAnimationDuration}
           >
-            <a href="#about">
+            <a href='#about'>
               <span>0.</span> About
             </a>
           </li>
           <li
-            data-aos="fade-down"
-            data-aos-easing="ease-in-cubic"
+            data-aos='fade-down'
+            data-aos-easing='ease-in-cubic'
             data-aos-delay={delay(1000)}
             data-aos-duration={initialAnimationDuration}
           >
-            <a href="#work">
+            <a href='#work'>
               <span>1.</span> Portfolio
             </a>
           </li>
           <li
-            data-aos="fade-down"
-            data-aos-easing="ease-in-cubic"
+            data-aos='fade-down'
+            data-aos-easing='ease-in-cubic'
             data-aos-delay={delay(1200)}
             data-aos-duration={initialAnimationDuration}
           >
-            <a href="#education">
+            <a href='#education'>
               <span>2.</span> Education
             </a>
           </li>
           <li
-            data-aos="fade-down"
-            data-aos-easing="ease-in-cubic"
+            data-aos='fade-down'
+            data-aos-easing='ease-in-cubic'
             data-aos-delay={delay(1400)}
             data-aos-duration={initialAnimationDuration}
           >
-            <a href="#workExperience">
+            <a href='#workExperience'>
               <span>3.</span> Work Experience
             </a>
           </li>
           <li
-            data-aos="fade-down"
-            data-aos-easing="ease-in-cubic"
+            data-aos='fade-down'
+            data-aos-easing='ease-in-cubic'
             data-aos-delay={delay(1600)}
             data-aos-duration={initialAnimationDuration}
           >
-            <a href="#contact">
+            <a href='#contact'>
               <span>4.</span> Contact
             </a>
           </li>
           <li
-            data-aos="fade-left"
-            data-aos-easing="ease-in-cubic"
+            data-aos='fade-left'
+            data-aos-easing='ease-in-cubic'
             data-aos-delay={delay(1800)}
             data-aos-duration={initialAnimationDuration}
           >
             <a
-              href="/resume.pdf"
+              href='/resume.pdf'
               // href="#"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
+              target='_blank'
+              rel='nofollow noopener noreferrer'
             >
               Resume
             </a>
@@ -278,7 +278,7 @@ const Header = ({ show }) => {
       </nav>
       <CSSTransition
         in={sideDrawerOpen}
-        classNames="slide"
+        classNames='slide'
         timeout={{
           enter: 150,
           exit: 0,
@@ -289,35 +289,35 @@ const Header = ({ show }) => {
         <Sidebar>
           <ul css={responsiveList}>
             <li>
-              <a href="#about" onClick={closeSideBar}>
+              <a href='#about' onClick={closeSideBar}>
                 <span>0.</span> About
               </a>
             </li>
             <li>
-              <a href="#work" onClick={closeSideBar}>
+              <a href='#work' onClick={closeSideBar}>
                 <span>1.</span> Portfolio
               </a>
             </li>
             <li>
-              <a href="#education" onClick={closeSideBar}>
+              <a href='#education' onClick={closeSideBar}>
                 <span>2.</span> Education
               </a>
             </li>
             <li>
-              <a href="#workExperience" onClick={closeSideBar}>
+              <a href='#workExperience' onClick={closeSideBar}>
                 <span>3.</span> Work Experience
               </a>
             </li>
             <li>
-              <a href="#contact" onClick={closeSideBar}>
+              <a href='#contact' onClick={closeSideBar}>
                 <span>4.</span> Contact
               </a>
             </li>
             <li>
               <a
-                href="/resume.pdf"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
+                href='/resume.pdf'
+                target='_blank'
+                rel='nofollow noopener noreferrer'
               >
                 Resume
               </a>

@@ -1,12 +1,12 @@
-import React from "react";
-import Img from "gatsby-image";
-import { css } from "@emotion/core";
-import styled from "@emotion/styled";
-import { graphql, useStaticQuery } from "gatsby";
-import { theme } from "styles/index";
-import { useState } from "react";
-import Backdrop from "components/backdrop/backdrop";
-import { CSSTransition } from "react-transition-group";
+import React from 'react';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
+import { graphql, useStaticQuery } from 'gatsby';
+import { theme } from 'styles/index';
+import { useState } from 'react';
+import Backdrop from 'components/backdrop/backdrop';
+import { CSSTransition } from 'react-transition-group';
 
 const { colors, fonts } = theme;
 
@@ -46,7 +46,7 @@ const SubTitle = styled.h4`
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.2rem;
-  color: ${colors.brightYellow};  
+  color: ${colors.brightYellow};
   padding-top: 0.5rem;
   display: block;
   margin: 0;
@@ -116,28 +116,28 @@ const Figure = styled.figure`
   position: relative;
 `;
 
-const phoneImgStyle = css`
-  width: 30rem;
-  position: absolute !important;
-  top: 40%;
-  left: 60%;
-  z-index: 30;
+// const phoneImgStyle = css`
+//   width: 30rem;
+//   position: absolute !important;
+//   top: 40%;
+//   left: 60%;
+//   z-index: 30;
 
-  @media screen and (max-width: 900px) {
-    width: 20rem;
-    left: 55%;
-  }
+//   @media screen and (max-width: 900px) {
+//     width: 20rem;
+//     left: 55%;
+//   }
 
-  @media screen and (max-width: 500px) {
-    width: 17rem;
-    left: 60%;
-  }
+//   @media screen and (max-width: 500px) {
+//     width: 17rem;
+//     left: 60%;
+//   }
 
-  @media screen and (max-width: 400px) {
-    width: 12rem;
-    left: 60%;
-  }
-`;
+//   @media screen and (max-width: 400px) {
+//     width: 12rem;
+//     left: 60%;
+//   }
+// `;
 
 const macImgStyle = css`
   width: 55rem;
@@ -203,7 +203,7 @@ const MoreButton = styled.button`
   }
 `;
 
-const HR = styled.hr`
+const Hr = styled.hr`
   display: block;
   height: 2px;
   width: 95%;
@@ -231,60 +231,56 @@ const XButton = styled.button`
 
 const Project = ({
   originalMacMockupPhotoName,
-  originalPhoneMockupPhotoName,
-  title = "Project Untitled",
+  // originalPhoneMockupPhotoName,
+  title = 'Project Untitled',
   subtitle,
   card,
 }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const { images } = useStaticQuery(graphql`
-    {
-      images: allImageSharp {
-        edges {
-          node {
-            fluid {
-              aspectRatio
-              base64
-              originalImg
-              originalName
-              presentationHeight
-              presentationWidth
-              sizes
-              src
-              srcSet
-              srcSetWebp
-              srcWebp
-              tracedSVG
-            }
-            id
+  const data = useStaticQuery(graphql`
+    query {
+      allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+        nodes {
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED, width: 550)
           }
+          id
+          name
         }
       }
     }
   `);
 
-  const phonePic = images.edges.find(
-    img => img.node.fluid.originalName === originalPhoneMockupPhotoName
+  const imageNode = data.allFile.nodes.find(
+    (node) => node.name === originalMacMockupPhotoName
   );
 
-  const macPic = images.edges.find(
-    img => img.node.fluid.originalName === originalMacMockupPhotoName
-  );
+  if (!imageNode) {
+    console.error('Image not found:', originalMacMockupPhotoName);
+    return null; // or some placeholder
+  }
+
+  const imageData = getImage(imageNode);
 
   return (
     <Container>
       <Figure>
         <Title>{title}</Title>
         <SubTitle>{subtitle}</SubTitle>
-        <MoreButton onClick={() => setModalIsOpen(value => !value)}>
+        <MoreButton onClick={() => setModalIsOpen((value) => !value)}>
           More <span>&rarr;</span>
         </MoreButton>
-        <Img fluid={macPic.node.fluid} css={macImgStyle}></Img>
+        <GatsbyImage
+          image={imageData}
+          alt={`Image for ${title}`}
+          css={macImgStyle}
+        />
+
         <CSSTransition
           in={modalIsOpen}
           timeout={{ enter: 400, exit: 0 }}
-          classNames="modal"
+          classNames='modal'
           unmountOnExit
           mountOnEnter
         >
@@ -296,7 +292,7 @@ const Project = ({
         </CSSTransition>
         {modalIsOpen && <Backdrop onClick={() => setModalIsOpen(false)} />}
       </Figure>
-      <HR />
+      <Hr />
     </Container>
   );
 };
