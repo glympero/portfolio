@@ -122,9 +122,13 @@ const Hero = () => {
           data-aos-delay={delay()}
           data-aos-duration={initialAnimationDuration}
         >
-          I love working with Javascript and its ecosystem <br />
-          (React, Angular, NestJS, React-Native, VueJS) as well as <br /> C#,
-          .NET, building robust APIs, and SQL database development!
+          I love working with JavaScript and its ecosystem (React, Angular,
+          NestJS, React-Native, VueJS) as well as C#, .NET, building robust
+          APIs, and SQL database development. <br />
+          <br />
+          I’m also passionate about exploring micro-frontends architecture,
+          Next.js, Storyblok, and developing custom npm packages to create
+          scalable, modular solutions.
         </SubTitle>
         <Text
           data-aos="fade-right"
