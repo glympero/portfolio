@@ -2,3 +2,11 @@ Hi, I am Georgios Lymperopoulos.
 I love working with JavaScript and its ecosystem (React, Angular, NestJS, React-Native, VueJS) as well as C#, .NET, building robust APIs, and SQL database development.
 I’m also passionate about exploring micro-frontends architecture, Next.js, Storyblok, and developing custom npm packages to create scalable, modular solutions.
 I also love to read books like clean code, A Philosophy of Software Design, 2nd Edition by John Ousterhout, Head First Software Architecture: A Learner's Guide to Architectural Thinking by Raju Gandhi, You Don't Know JS: Async & Performance, Pragmatic Programmer
+
+Key Strengths & Unique Qualifications
+
+Over the past six years, I’ve led the modernization of EUIPO’s front-office applications, focusing on scalable React + TypeScript architecture  built around the optimistic-UI pattern. I designed and implemented micro-frontend solutions to unify services previously hosted in Liferay, using custom npm packages for shared UI components and forms. I have extensive experience with Next.js for SSR, Storyblok as a headless CMS, and a shared design system ensuring accessibility and consistency across applications, with secure OIDC authentication via WSO2. I established code-quality pipelines with Sonar, enforced pre-commit hooks, and achieved over 60% test coverage. Deployed on AWS through ArgoCD and Jenkins, . My work involves hands-on POCs, mentoring, and architectural guidance.
+
+Reason for Seeking a Change
+I’m looking for an environment that values technical excellence and cross-team collaboration, where I can contribute at a broader architectural level while remaining hands-on in development and mentoring.
+

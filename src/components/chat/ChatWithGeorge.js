@@ -1,13 +1,14 @@
 import React, { useState, useRef, useEffect } from "react";
 
+const monoFont =
+  'Menlo, Monaco, "SF Mono", "Fira Code", ui-monospace, SFMono-Regular, monospace';
+
 const MIN_LEN = 3;
 const MAX_LEN = 500;
 const COOLDOWN_MS = 3000;
-const MAX_QUESTIONS = 1;
+const MAX_QUESTIONS = 5;
 const STORAGE_KEY = "george-portfolio-chat";
-
-const monoFont =
-  'Menlo, Monaco, "SF Mono", "Fira Code", ui-monospace, SFMono-Regular, monospace';
+const CV_PATH = "/Lymperopoulos_G_CV_2025.pdf";
 
 export default function ChatWithGeorge() {
   const [messages, setMessages] = useState([]);
@@ -17,18 +18,7 @@ export default function ChatWithGeorge() {
   const bottomRef = useRef(null);
   const abortRef = useRef(null);
 
-  const isOnCooldown = Date.now() - lastSentAt < COOLDOWN_MS;
-  const canSend = !isSending && input.trim().length >= MIN_LEN && !isOnCooldown;
-
-  const userQuestionCount = messages.filter((m) => m.role === "user").length;
-  const limitReached = userQuestionCount >= MAX_QUESTIONS;
-
-  const scrollToBottom = () => {
-    if (bottomRef.current) {
-      bottomRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
+  // restore messages
   useEffect(() => {
     if (typeof window === "undefined") return;
     try {
@@ -41,29 +31,68 @@ export default function ChatWithGeorge() {
     }
   }, []);
 
+  // persist messages
   useEffect(() => {
     if (typeof window === "undefined") return;
     window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ messages }));
   }, [messages]);
 
-  useEffect(scrollToBottom, [messages]);
+  const userQuestionCount = messages.filter((m) => m.role === "user").length;
+  const limitReached = userQuestionCount > MAX_QUESTIONS;
+
+  const isTooShort = input.trim().length > 0 && input.trim().length < MIN_LEN;
+  const isOnCooldown = Date.now() - lastSentAt < COOLDOWN_MS;
+  const canSend =
+    !isSending &&
+    !limitReached &&
+    input.trim().length >= MIN_LEN &&
+    !isOnCooldown;
+
+  const scrollToBottom = () => {
+    if (bottomRef.current) {
+      bottomRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  // scroll on messages and on validation messages appearing
+  useEffect(scrollToBottom, [messages, isTooShort, limitReached]);
+
+  const renderContent = (text) => {
+    if (!text.includes(CV_PATH)) return text;
+
+    const parts = text.split(CV_PATH);
+    return (
+      <>
+        {parts[0]}
+        <a
+          href={CV_PATH}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "#22d3ee", textDecoration: "underline" }}
+        >
+          {CV_PATH}
+        </a>
+        {parts[1]}
+      </>
+    );
+  };
 
   const handleSend = async (e) => {
     e.preventDefault();
     const text = input.trim();
     if (!canSend) return;
 
-    const userMsg = {
+    const newUserMsg = {
       id: Date.now().toString(),
       role: "user",
       content: text,
     };
 
-    const history = [...messages, userMsg];
+    const history = [...messages, newUserMsg];
     const newUserCount = history.filter((m) => m.role === "user").length;
+
     setMessages(history);
     setInput("");
-
     setLastSentAt(Date.now());
 
     if (newUserCount > MAX_QUESTIONS) {
@@ -71,15 +100,15 @@ export default function ChatWithGeorge() {
         id: Date.now().toString() + "-limit",
         role: "assistant",
         content:
-          "I’ve already answered a few key questions for this visit. If you’d like to discuss more, feel free to contact me directly via email or LinkedIn.",
+          "I’ve already answered a few key questions for this visit. If you’d like to explore more or evaluate my background in detail, you can download my full CV here:\n\n" +
+          CV_PATH +
+          "\n\nFeel free to contact me directly for a deeper conversation.",
       };
       setMessages((prev) => [...prev, finalMsg]);
       return;
     }
 
     setIsSending(true);
-
-    // create abort controller for this request
     const controller = new AbortController();
     abortRef.current = controller;
 
@@ -156,12 +185,22 @@ export default function ChatWithGeorge() {
               color: "#94a3b8",
             }}
           >
-            Ask me anything about my experience, stack, or projects.
+            Ask me a few focused questions about my experience, stack, or
+            projects. For deeper discussions, feel free to reach out directly.
             <br />
-            e.g.{" "}
-            <span style={{ color: "#22d3ee" }}>
-              "What kind of roles are you interested in?"
-            </span>
+            You can also{" "}
+            <a
+              href={CV_PATH}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#22d3ee",
+                textDecoration: "underline",
+              }}
+            >
+              download my CV here
+            </a>
+            .
           </p>
         )}
 
@@ -195,7 +234,7 @@ export default function ChatWithGeorge() {
                 fontSize: 13,
               }}
             >
-              {m.content}
+              {renderContent(m.content)}
             </div>
           </div>
         ))}
@@ -213,6 +252,33 @@ export default function ChatWithGeorge() {
           </div>
         )}
 
+        {limitReached && (
+          <div
+            style={{
+              marginTop: 8,
+              fontSize: 12,
+              color: "#facc15",
+              opacity: 0.9,
+            }}
+          >
+            Session limit reached. For more information, you can always download
+            my CV or contact me directly.
+          </div>
+        )}
+
+        {isTooShort && !isSending && !limitReached && (
+          <div
+            style={{
+              marginTop: 6,
+              fontSize: 12,
+              color: "#f97316",
+            }}
+          >
+            Try to ask at least {MIN_LEN} characters so I can respond
+            meaningfully.
+          </div>
+        )}
+
         <div ref={bottomRef} />
       </div>
 
@@ -224,12 +290,12 @@ export default function ChatWithGeorge() {
           value={input}
           onChange={(e) => setInput(e.target.value.slice(0, MAX_LEN))}
           placeholder={
-            isSending
+            limitReached
+              ? "You’ve reached the question limit."
+              : isSending
               ? "Generating an answer…"
               : isOnCooldown
               ? "Give me a second…"
-              : limitReached
-              ? "You’ve reached the question limit."
               : "Ask me something…"
           }
           disabled={isSending || limitReached}
@@ -243,7 +309,7 @@ export default function ChatWithGeorge() {
             fontFamily: monoFont,
             fontSize: 13,
             outline: "none",
-            opacity: isSending ? 0.6 : 1,
+            opacity: isSending || limitReached ? 0.6 : 1,
           }}
         />
 
@@ -272,12 +338,12 @@ export default function ChatWithGeorge() {
               padding: "8px 14px",
               borderRadius: 999,
               border: "1px solid #22d3ee",
-              background: "#22d3ee",
+              background: canSend ? "#22d3ee" : "#0f172a",
               color: "#020617",
               fontFamily: monoFont,
               fontSize: 13,
-              cursor: !canSend || limitReached ? "default" : "pointer",
-              opacity: !canSend || limitReached ? 0.5 : 1,
+              cursor: canSend && !limitReached ? "pointer" : "default",
+              opacity: canSend && !limitReached ? 1 : 0.5,
             }}
           >
             Send

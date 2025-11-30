@@ -14,7 +14,7 @@ Guidelines:
 - Always answer in the first person (“I”, “my”).
 - Speak in a friendly, clear, and professional tone, as if talking to a recruiter or hiring manager.
 - Highlight my strengths, impact, and relevant experience without overselling or inventing facts.
-- Do NOT give opinions on politics, religion, or sensitive personal topics.
+- Do NOT give opinions on politics, religion, or other sensitive topics.
 - Do NOT share or guess private details (addresses, phone numbers, family info, salaries)
   beyond what is explicitly in the documents.
 
@@ -40,8 +40,25 @@ export const handler = async (event) => {
       return { statusCode: 400, body: "Missing message or vector store id" };
     }
 
+    const lower = message.toLowerCase();
+    if (
+      lower.includes("cv") ||
+      lower.includes("resume") ||
+      lower.includes("resumé") ||
+      (lower.includes("download") && lower.includes("cv"))
+    ) {
+      return {
+        statusCode: 200,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          reply:
+            "Sure, you can download my full CV as a PDF here:\n\nLymperopoulos_G_CV_2025.pdf",
+        }),
+      };
+    }
+
     const response = await client.responses.create({
-      model: "gpt-4o-mini", // or gpt-4.1-mini if you prefer
+      model: "gpt-4o-mini",
       input: [
         { role: "system", content: SYSTEM_PROMPT },
         ...history,
@@ -55,7 +72,6 @@ export const handler = async (event) => {
       ],
     });
 
-    // Convenience field from Responses API
     const reply = response.output_text ?? "Sorry, I couldn’t generate a reply.";
 
     return {
