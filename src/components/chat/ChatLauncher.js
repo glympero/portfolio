@@ -1,11 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ChatWithGeorge from "./ChatWithGeorge";
+
+const monoFont =
+  'Menlo, Monaco, "SF Mono", "Fira Code", ui-monospace, SFMono-Regular, monospace';
 
 export default function ChatLauncher() {
   const [open, setOpen] = useState(false);
 
-  const monoFont =
-    'Menlo, Monaco, "SF Mono", "Fira Code", ui-monospace, SFMono-Regular, monospace';
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+
+    const prevOverflow = document.body.style.overflow;
+
+    if (open) {
+      document.body.style.overflow = "hidden";
+
+      // focus the chat input (we'll add this id next)
+      setTimeout(() => {
+        const input = document.getElementById("george-chat-input");
+        if (input) input.focus();
+      }, 0);
+    } else {
+      document.body.style.overflow = prevOverflow || "";
+    }
+
+    return () => {
+      document.body.style.overflow = prevOverflow || "";
+    };
+  }, [open]);
 
   return (
     <>

@@ -162,7 +162,7 @@ export default function ChatWithGeorge() {
         borderRadius: 12,
         border: "1px solid #1f2937",
         padding: 12,
-        color: "#e5e7eb",
+        color: "#8892b0",
         fontFamily: monoFont,
         fontSize: 13,
       }}
@@ -220,7 +220,7 @@ export default function ChatWithGeorge() {
                 borderRadius: 14,
                 background:
                   m.role === "user" ? "#00f6ed" : "rgba(15,23,42,0.9)",
-                color: m.role === "user" ? "#020617" : "#e5e7eb",
+                color: m.role === "user" ? "#020617" : "#8892b0",
                 border:
                   m.role === "user"
                     ? "1px solid #0e7490"
@@ -288,6 +288,7 @@ export default function ChatWithGeorge() {
       >
         <input
           value={input}
+          id="george-chat-input"
           onChange={(e) => setInput(e.target.value.slice(0, MAX_LEN))}
           placeholder={
             limitReached
@@ -305,7 +306,7 @@ export default function ChatWithGeorge() {
             borderRadius: 999,
             border: "1px solid #1f2937",
             background: "#020617",
-            color: "#e5e7eb",
+            color: "#8892b0",
             fontFamily: monoFont,
             fontSize: 13,
             outline: "none",
