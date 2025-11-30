@@ -68,7 +68,7 @@ export default function ChatWithGeorge() {
           href={CV_PATH}
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#22d3ee", textDecoration: "underline" }}
+          style={{ color: "#00f6ed", textDecoration: "underline" }}
         >
           {CV_PATH}
         </a>
@@ -194,7 +194,7 @@ export default function ChatWithGeorge() {
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                color: "#22d3ee",
+                color: "#00f6ed",
                 textDecoration: "underline",
               }}
             >
@@ -219,7 +219,7 @@ export default function ChatWithGeorge() {
                 padding: "8px 12px",
                 borderRadius: 14,
                 background:
-                  m.role === "user" ? "#22d3ee" : "rgba(15,23,42,0.9)",
+                  m.role === "user" ? "#00f6ed" : "rgba(15,23,42,0.9)",
                 color: m.role === "user" ? "#020617" : "#e5e7eb",
                 border:
                   m.role === "user"
@@ -337,8 +337,8 @@ export default function ChatWithGeorge() {
             style={{
               padding: "8px 14px",
               borderRadius: 999,
-              border: "1px solid #22d3ee",
-              background: canSend ? "#22d3ee" : "#0f172a",
+              border: "1px solid #00f6ed",
+              background: "#00f6ed",
               color: "#020617",
               fontFamily: monoFont,
               fontSize: 13,

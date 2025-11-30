@@ -19,21 +19,25 @@ export default function ChatLauncher() {
             right: "24px",
             bottom: "24px",
             borderRadius: 999,
-            padding: "10px 18px",
-            border: "1px solid #22d3ee",
-            background: "rgba(15,23,42,0.9)",
-            color: "#22d3ee",
+            padding: "10px 20px",
+            border: "1px solid #00f6ed",
+            background: "rgba(15,23,42,0.85)",
+            color: "#00f6ed",
             fontFamily: monoFont,
             fontSize: 13,
-            letterSpacing: 0.5,
+            letterSpacing: 1,
             textTransform: "uppercase",
             cursor: "pointer",
-            boxShadow: "0 0 0 1px rgba(15,23,42,0.7)",
             backdropFilter: "blur(6px)",
             zIndex: 9999,
+            display: "flex",
+            alignItems: "center",
+            gap: 10,
+            boxShadow: "0 0 8px #00f6ed55",
           }}
         >
-          💬 Chat with me
+          <span style={{ fontSize: 14 }}>{" >_ "}</span>
+          <span>Ask&nbsp;George</span>
         </button>
       )}
 
