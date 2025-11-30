@@ -1,20 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
-import 'aos/dist/aos.css';
-import PropTypes from 'prop-types';
-import styled from '@emotion/styled';
-import Head from 'components/head';
-import Footer from 'components/footer/footer';
-import LoadingIntro from 'components/loading-intro/loading-intro';
-import Header from 'containers/header/header';
-import { Global } from '@emotion/react';
-import { globalStyles } from 'styles';
-import useScrollDirection from 'hooks/useScrollDirection';
+import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
+import "aos/dist/aos.css";
+import PropTypes from "prop-types";
+import styled from "@emotion/styled";
+import Head from "components/head";
+import Footer from "components/footer/footer";
+import LoadingIntro from "components/loading-intro/loading-intro";
+import ChatLauncher from "components/chat/ChatLauncher";
+import Header from "containers/header/header";
+import { Global } from "@emotion/react";
+import { globalStyles } from "styles";
+import useScrollDirection from "hooks/useScrollDirection";
 
 // if we're in dev mode
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === "development") {
   // Set up react-axe to catch accessibility issues during development
-  const axe = require('react-axe');
+  const axe = require("react-axe");
   axe(React, ReactDOM, 1000);
 }
 
@@ -34,7 +35,7 @@ const Layout = ({ children }) => {
      * therefore this import is required either in useEffect or componentDidMount as they
      * are exclusively executed on a client
      */
-    const AOS = require('aos');
+    const AOS = require("aos");
     AOS.init({
       once: true,
     });
@@ -53,7 +54,10 @@ const Layout = ({ children }) => {
       {!loading ? (
         <React.Fragment>
           <Header show={show} />
-          <Main>{children}</Main>
+          <Main>
+            {children}
+            <ChatLauncher />
+          </Main>
           <Footer />
         </React.Fragment>
       ) : (

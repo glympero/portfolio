@@ -1,12 +1,12 @@
-import React from 'react';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
-import { graphql, useStaticQuery } from 'gatsby';
-import { theme } from 'styles/index';
-import { useState } from 'react';
-import Backdrop from 'components/backdrop/backdrop';
-import { CSSTransition } from 'react-transition-group';
+import React from "react";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { css } from "@emotion/react";
+import styled from "@emotion/styled";
+import { graphql, useStaticQuery } from "gatsby";
+import { theme } from "styles/index";
+import { useState } from "react";
+import Backdrop from "components/backdrop/backdrop";
+import { CSSTransition } from "react-transition-group";
 
 const { colors, fonts } = theme;
 
@@ -232,7 +232,7 @@ const XButton = styled.button`
 const Project = ({
   originalMacMockupPhotoName,
   // originalPhoneMockupPhotoName,
-  title = 'Project Untitled',
+  title = "Project Untitled",
   subtitle,
   card,
 }) => {
@@ -257,11 +257,13 @@ const Project = ({
   );
 
   if (!imageNode) {
-    console.error('Image not found:', originalMacMockupPhotoName);
+    console.error("Image not found:", originalMacMockupPhotoName);
     return null; // or some placeholder
   }
 
   const imageData = getImage(imageNode);
+
+  console.log("Rendering project:", title, imageData);
 
   return (
     <Container>
@@ -280,7 +282,7 @@ const Project = ({
         <CSSTransition
           in={modalIsOpen}
           timeout={{ enter: 400, exit: 0 }}
-          classNames='modal'
+          classNames="modal"
           unmountOnExit
           mountOnEnter
         >

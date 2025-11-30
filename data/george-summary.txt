@@ -1,0 +1,4 @@
+Hi, I am Georgios Lymperopoulos.
+I love working with JavaScript and its ecosystem (React, Angular, NestJS, React-Native, VueJS) as well as C#, .NET, building robust APIs, and SQL database development.
+I’m also passionate about exploring micro-frontends architecture, Next.js, Storyblok, and developing custom npm packages to create scalable, modular solutions.
+I also love to read books like clean code, A Philosophy of Software Design, 2nd Edition by John Ousterhout, Head First Software Architecture: A Learner's Guide to Architectural Thinking by Raju Gandhi, You Don't Know JS: Async & Performance, Pragmatic Programmer
