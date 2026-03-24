@@ -86,18 +86,38 @@ const Education = () => {
                     Property Office.
                   </p>
                   <p className="text-muted">
-                    Managing the modernization of European Union IPO including
-                    their website and 5 very complex forms for registering
-                    trademarks and designs. Technologies for forms: React,
-                    Typescript, Context API implementing the optimistic UI
-                    pattern. Technologies for website and admin: Next,
-                    Typescript, Apollo, GraphQL while using storyblok as
-                    headless CMS.
+                    Leading modernization work across the EUIPO ecosystem,
+                    including large-scale React and Next.js applications,
+                    complex filing flows, shared frontend architecture, and
+                    mentoring across a large delivery team.
                   </p>
                   <p className="text-muted">Team size: 20+.</p>
                   <p className="text-muted">
-                    Technologies: React, Redux Toolkit, Context API, Typescript,
-                    Git, Jira, Material.
+                    Beyond core product delivery, I have been building AI-based
+                    engineering workflows and production experiments that bridge
+                    application development, cloud data pipelines, and developer
+                    tooling.
+                  </p>
+                  <p className="text-muted">
+                    One example is the detractor-category-tagger: a Java-based
+                    Google Cloud Function with HTTP and Pub/Sub entry points
+                    that looks up NPS response data from BigQuery, classifies
+                    detractor feedback via Vertex AI / Gemini 2.5 Flash, and
+                    writes structured results back to BigQuery with confidence,
+                    reason, model name, and prompt-version metadata.
+                  </p>
+                  <p className="text-muted">
+                    I also maintain AI-augmented engineering workflows with MCP
+                    integrations and custom skills for architecture validation,
+                    code review, planning, testing, security, and documentation,
+                    alongside reusable agent patterns with human approval and
+                    evaluation loops.
+                  </p>
+                  <p className="text-muted">
+                    Technologies: React, Next.js, Redux Toolkit, Context API,
+                    TypeScript, Apollo, GraphQL, Storyblok, Node.js, Java,
+                    GCP, BigQuery, Cloud Functions, Pub/Sub, Vertex AI, Jira,
+                    GitHub, Figma, SonarQube, MCP tooling.
                   </p>
                 </div>
               </div>

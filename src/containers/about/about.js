@@ -284,11 +284,17 @@ const About = () => {
               .
             </Text>
             <Text>
-              I appreciate a good challenge, always achieve my goals and meet or
-              exceed deadlines. I work well within a team environment and I have
-              the dedication and work ethic to work solo. I take pride in
-              maintaining high standards and look forward to future
-              opportunities.
+              I am a senior engineer with a frontend and full-stack foundation,
+              and my recent work has expanded into AI engineering and
+              AI-augmented software delivery. I care about maintainable systems,
+              strong architecture, and practical solutions that can survive real
+              product constraints.
+            </Text>
+            <Text>
+              I work comfortably across hands-on implementation, technical
+              direction, and mentoring. The thread running through my work is
+              consistent: ship useful software, keep the architecture coherent,
+              and improve the delivery system around the team.
             </Text>
           </TextWrapper>
         );
@@ -296,36 +302,32 @@ const About = () => {
         return (
           <TextWrapper>
             <Text>
-              I have a strong understanding of JavaScript and the way the
-              language works under the hood, along with an excellent
-              understanding of how Web Browser works, which allows me to quickly
-              adapt to new tools and technologies.
+              I have deep experience with JavaScript, TypeScript, React,
+              Next.js, Node.js, GraphQL, .NET, and SQL, backed by a strong
+              understanding of browser behaviour, rendering, performance,
+              accessibility, and scalable frontend architecture.
             </Text>
             <Text>
-              Furthermore, I work with a variety of framework and libraries and
-              I like experiment outside of work with the latest tech, to ensure
-              I am always abreast of the industry's innovations.
+              My current focus includes AI-enabled engineering workflows:
+              production use cases, MCP-based tooling, custom agents, and
+              reference architectures that help teams use AI without lowering
+              engineering standards.
             </Text>
             <Text>
-              Along with a robust experience in using HTML5, CSS (SCSS,
-              styled-component, CSS Modules) and understanding Web Performances,
-              the list of tools I consider myself proficient in using includes
-              React (Hooks and Functional Component Composition), Redux (Thunk,
-              Saga and Observables), TypeScript, GraphQL, Apollo, Gatsby.js,
-              Node, Express. I prefer Jest and React Testing Library for Unit
-              Testing and I am keen to learn and use Cypress in a commercial
-              environment.
+              I also work with GCP services such as <HighLight>BigQuery</HighLight>,{" "}
+              <HighLight>Cloud Functions</HighLight>, <HighLight>Pub/Sub</HighLight>,{" "}
+              and <HighLight>Vertex AI</HighLight>, building automation that
+              connects classification logic with operational data flows and
+              downstream analysis.
             </Text>
             <Text>
-              My expertise extends to the backend domain where I've developed
-              strong skills in C# and the .NET ecosystem. I've built and
-              maintained robust RESTful APIs using ASP.NET Core, with a focus on
-              performance optimization and secure architecture. I'm proficient
-              in database design and management with SQL, implementing efficient
-              queries, stored procedures, and maintaining data integrity through
-              proper normalization and indexing strategies. This full-stack
-              capability allows me to deliver end-to-end solutions with seamless
-              integration between front and backend systems.
+              On the delivery side, I use live context from <HighLight>Jira</HighLight>,{" "}
+              <HighLight>GitHub</HighLight>, <HighLight>Figma</HighLight>, and
+              custom MCP servers for architecture, code metrics, git history,
+              dependencies, team standards, and onboarding. I also use{" "}
+              <HighLight>Obsidian</HighLight>, <HighLight>Confluence</HighLight>,
+              and <HighLight>SonarQube</HighLight> to support reference
+              material, estimations, project context, and quality analysis.
             </Text>
           </TextWrapper>
         );
@@ -333,28 +335,23 @@ const About = () => {
         return (
           <TextWrapper>
             <Text>
-              From the beginning of my new career, I have spent the majority of
-              my free time to not only improve and consolidate my knowledge of
-              the building blocks of the web (HTML, CSS, JavaScript, Browser
-              Compatibility, Web Performance and Web Security, Accessibility)
-              but I have also spent a large amount of time learning and
-              experimenting with modern framework, languages and libraries
-              (React, Angular, Redux, GraphQL, PHP, Node, Apollo, Drupal,
-              Symphony, Wordpress).
+              Right now I spend a lot of time refining how AI fits into real
+              engineering work: prompt design, agent workflows, context
+              retrieval, MCP integrations, evaluation, and guardrails that keep
+              output aligned with architecture and code quality expectations.
             </Text>
             <Text>
-              I constantly keep myself up to date with the latest innovation in
-              Front End Development and in the JavaScript ecosystem, using
-              different media such as Twitter, Medium, dev.to, CSS Tricks,
-              Frontend Masters, etc.
+              I am especially interested in the intersection of software
+              architecture and AI assistance, where reference patterns, shared
+              standards, and reusable workflows can materially improve how teams
+              design, estimate, implement, and review work.
             </Text>
             <Text>
               <HighLight>
-                I strongly believe that learning is a life-long process that is
-                essential to an Engineer’s success{" "}
+                I strongly believe that learning is a life-long process and that
+                AI is most valuable when it strengthens disciplined engineering
+                rather than replacing it.
               </HighLight>
-              in delivering software the reflects the best standard of the
-              industry
             </Text>
           </TextWrapper>
         );
