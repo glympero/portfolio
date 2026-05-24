@@ -91,7 +91,7 @@ const Education = () => {
                     complex filing flows, shared frontend architecture, and
                     mentoring across a large delivery team.
                   </p>
-                  <p className="text-muted">Team size: 20+.</p>
+                  <p className="text-muted">Team size: 10+.</p>
                   <p className="text-muted">
                     Beyond core product delivery, I have been building AI-based
                     engineering workflows and production experiments that bridge
@@ -115,9 +115,9 @@ const Education = () => {
                   </p>
                   <p className="text-muted">
                     Technologies: React, Next.js, Redux Toolkit, Context API,
-                    TypeScript, Apollo, GraphQL, Storyblok, Node.js, Java,
-                    GCP, BigQuery, Cloud Functions, Pub/Sub, Vertex AI, Jira,
-                    GitHub, Figma, SonarQube, MCP tooling.
+                    TypeScript, Apollo, GraphQL, Storyblok, Node.js, Java, GCP,
+                    BigQuery, Cloud Functions, Pub/Sub, Vertex AI, Jira, GitHub,
+                    Figma, SonarQube, MCP tooling.
                   </p>
                 </div>
               </div>

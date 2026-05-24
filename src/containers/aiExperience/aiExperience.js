@@ -73,6 +73,43 @@ const Cards = styled.div`
   }
 `;
 
+const StackWrapper = styled.div`
+  margin-top: 4rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+`;
+
+const StackTitle = styled.h4`
+  margin: 0 0 1.5rem;
+  color: ${colors.white};
+  font-family: ${fonts.primary};
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+`;
+
+const StackList = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 90rem;
+`;
+
+const StackTag = styled.li`
+  padding: 0.6rem 1.4rem;
+  border: 1px solid rgba(0, 246, 237, 0.4);
+  border-radius: 3px;
+  color: ${colors.greyBlue};
+  font-family: ${fonts.primary};
+  font-size: 1.3rem;
+  letter-spacing: 0.15rem;
+`;
+
 const Card = styled.article`
   min-height: 100%;
   padding: 2.5rem;
@@ -124,6 +161,26 @@ const Emphasis = styled.span`
   color: ${colors.white};
 `;
 
+const AI_STACK = [
+  "LLM Application Development",
+  "Prompt Engineering",
+  "RAG",
+  "MCP",
+  "AI Agents",
+  "LangGraph",
+  "Claude",
+  "Codex",
+  "Vertex AI",
+  "Gemini",
+  "BigQuery",
+  "FastAPI",
+  "Python",
+  "Pydantic",
+  "Evals",
+  "AI-assisted Code Review",
+  "Developer Productivity Automation",
+];
+
 const AIExperience = () => {
   return (
     <Section id="ai-engineering">
@@ -133,14 +190,17 @@ const AIExperience = () => {
           data-aos-duration="350"
           data-aos-delay="500"
         >
-          AI Engineering
+          AI Engineering & Developer Productivity
         </Title>
       </Header>
       <Intro>
-        I treat AI as an engineering capability, not a slide-deck feature. My
-        recent work spans production classification pipelines on GCP, MCP-based
-        development tooling, and custom agent systems with human approval,
-        evaluation, and architecture guardrails built into the workflow.
+        I am expanding my frontend architecture background into AI Product and
+        Platform Engineering, with hands-on work on LLM-powered systems around
+        developer workflows, enterprise integrations, RAG, MCP, evals, and
+        AI-assisted software delivery. My focus is not only using AI tools,
+        but designing reliable workflows around them: connecting AI assistants
+        with project context, documentation, code review processes,
+        architecture rules, and internal systems.
       </Intro>
       <Cards>
         <Card>
@@ -221,7 +281,86 @@ const AIExperience = () => {
             </ListItem>
           </List>
         </Card>
+        <Card>
+          <CardTitle>AI Code Review Agent</CardTitle>
+          <CardSubtitle>
+            Prototype · Python, FastAPI, RAG, React, TypeScript
+          </CardSubtitle>
+          <List>
+            <ListItem>
+              Developing an <Emphasis>AI-assisted code review workflow</Emphasis>{" "}
+              for React and TypeScript projects that analyzes PR diffs and
+              produces structured review feedback.
+            </ListItem>
+            <ListItem>
+              Retrieves <Emphasis>frontend architecture rules</Emphasis> through
+              RAG and checks <Emphasis>accessibility</Emphasis>,{" "}
+              <Emphasis>testing</Emphasis>, and architectural concerns against
+              the reference architecture.
+            </ListItem>
+            <ListItem>
+              Outputs <Emphasis>confidence scoring</Emphasis> and routes
+              ambiguous findings through a <Emphasis>human approval</Emphasis>{" "}
+              gate so the reviewer stays in control of merges.
+            </ListItem>
+          </List>
+        </Card>
+        <Card>
+          <CardTitle>MCP Jira Assistant</CardTitle>
+          <CardSubtitle>
+            Prototype · MCP, Claude, Jira, Tool Calling
+          </CardSubtitle>
+          <List>
+            <ListItem>
+              Building an <Emphasis>MCP-based assistant</Emphasis> that
+              connects AI tools to live Jira project context through a
+              standardized tool integration layer.
+            </ListItem>
+            <ListItem>
+              Enables structured retrieval of <Emphasis>tickets</Emphasis>,{" "}
+              <Emphasis>summaries</Emphasis>, and{" "}
+              <Emphasis>engineering context</Emphasis> from sprint and epic
+              data without leaving the assistant surface.
+            </ListItem>
+            <ListItem>
+              Generates <Emphasis>next-step suggestions</Emphasis> grounded in
+              the current sprint state to reduce context switching during
+              implementation and planning.
+            </ListItem>
+          </List>
+        </Card>
+        <Card>
+          <CardTitle>AI Documentation Workflow</CardTitle>
+          <CardSubtitle>
+            Personal productivity system · Claude, Codex, Obsidian, Jira
+          </CardSubtitle>
+          <List>
+            <ListItem>
+              Exploring an <Emphasis>AI-assisted documentation workflow</Emphasis>{" "}
+              that connects development activity, Jira context, Claude/Codex
+              outputs, and Obsidian notes.
+            </ListItem>
+            <ListItem>
+              Automates <Emphasis>technical knowledge capture</Emphasis> across
+              tickets, code changes, and architecture decisions so context
+              compounds instead of decaying.
+            </ListItem>
+            <ListItem>
+              Maintains <Emphasis>reusable engineering documentation</Emphasis>{" "}
+              and decision records that stay close to where the work actually
+              happens.
+            </ListItem>
+          </List>
+        </Card>
       </Cards>
+      <StackWrapper>
+        <StackTitle>AI Engineering Stack</StackTitle>
+        <StackList>
+          {AI_STACK.map(skill => (
+            <StackTag key={skill}>{skill}</StackTag>
+          ))}
+        </StackList>
+      </StackWrapper>
     </Section>
   );
 };

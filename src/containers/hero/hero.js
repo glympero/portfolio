@@ -122,13 +122,9 @@ const Hero = () => {
           data-aos-delay={delay()}
           data-aos-duration={initialAnimationDuration}
         >
-          Senior full-stack engineer working across React, TypeScript, Node,
-          C#, .NET, SQL, Java, GCP, and AI-augmented delivery systems. <br />
-          <br />
-          I build robust products and engineering workflows, from production
-          web applications and APIs to MCP-enabled tooling, custom agents, and
-          cloud workflows using BigQuery, Cloud Functions, Pub/Sub, and Vertex
-          AI.
+          Lead Engineer & Frontend Architect with deep React, TypeScript, and
+          full-stack experience, expanding into AI Product Engineering and
+          Developer Productivity.
         </SubTitle>
         <Text
           data-aos="fade-right"
@@ -136,9 +132,10 @@ const Hero = () => {
           data-aos-delay={delay()}
           data-aos-duration={initialAnimationDuration}
         >
-          Recent work includes Vertex AI classification pipelines for NPS
-          feedback, internal developer tooling via MCP, and reusable agent
-          systems with human approval, evaluation, and architecture guardrails.
+          Focused on scalable frontend architecture, micro-frontends, and
+          design systems, alongside hands-on work with LLM-powered workflows,
+          MCP integrations, RAG, AI-assisted code review, and enterprise tool
+          automation.
         </Text>
         <LinkButton
           href="#contact"

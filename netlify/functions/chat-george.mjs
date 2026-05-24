@@ -56,7 +56,7 @@ export const handler = async (event) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           reply:
-            "Sure, you can download my full CV as a PDF here:\n\nLymperopoulos_G_CV_2025.pdf",
+            "Sure, you can download my full CV as a PDF here:\n\nLymperopoulos_G_CV_2026.pdf",
         }),
       };
     }

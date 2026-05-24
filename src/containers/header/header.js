@@ -16,7 +16,7 @@ const HeaderTag = styled.header`
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: ${props => (props.show ? "0" : "0")};
+  top: ${(props) => (props.show ? "0" : "0")};
   z-index: 1000;
   box-shadow: none;
   background: ${colors.maastrichtBlue};
@@ -195,7 +195,7 @@ const Header = ({ show }) => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
   const onHamburgerClick = () =>
-    setSideDrawerOpen(previousValue => !previousValue);
+    setSideDrawerOpen((previousValue) => !previousValue);
 
   const closeSideBar = () => setSideDrawerOpen(false);
 
@@ -217,11 +217,21 @@ const Header = ({ show }) => {
           <li
             data-aos="fade-down"
             data-aos-easing="ease-in-cubic"
+            data-aos-delay={delay(900)}
+            data-aos-duration={initialAnimationDuration}
+          >
+            <a href="#ai-engineering">
+              <span>1.</span> AI
+            </a>
+          </li>
+          <li
+            data-aos="fade-down"
+            data-aos-easing="ease-in-cubic"
             data-aos-delay={delay(1000)}
             data-aos-duration={initialAnimationDuration}
           >
             <a href="#work">
-              <span>1.</span> Portfolio
+              <span>2.</span> Portfolio
             </a>
           </li>
           <li
@@ -231,7 +241,7 @@ const Header = ({ show }) => {
             data-aos-duration={initialAnimationDuration}
           >
             <a href="#education">
-              <span>2.</span> Education
+              <span>3.</span> Education
             </a>
           </li>
           <li
@@ -241,7 +251,7 @@ const Header = ({ show }) => {
             data-aos-duration={initialAnimationDuration}
           >
             <a href="#workExperience">
-              <span>3.</span> Work Experience
+              <span>4.</span> Work Experience
             </a>
           </li>
           <li
@@ -251,7 +261,7 @@ const Header = ({ show }) => {
             data-aos-duration={initialAnimationDuration}
           >
             <a href="#contact">
-              <span>4.</span> Contact
+              <span>5.</span> Contact
             </a>
           </li>
           <li
@@ -261,7 +271,7 @@ const Header = ({ show }) => {
             data-aos-duration={initialAnimationDuration}
           >
             <a
-              href="/Lymperopoulos_G_CV_2025.pdf"
+              href="/Lymperopoulos_G_CV_2026.pdf"
               // href="#"
               target="_blank"
               rel="nofollow noopener noreferrer"
@@ -294,28 +304,33 @@ const Header = ({ show }) => {
               </a>
             </li>
             <li>
+              <a href="#ai-engineering" onClick={closeSideBar}>
+                <span>1.</span> AI
+              </a>
+            </li>
+            <li>
               <a href="#work" onClick={closeSideBar}>
-                <span>1.</span> Portfolio
+                <span>2.</span> Portfolio
               </a>
             </li>
             <li>
               <a href="#education" onClick={closeSideBar}>
-                <span>2.</span> Education
+                <span>3.</span> Education
               </a>
             </li>
             <li>
               <a href="#workExperience" onClick={closeSideBar}>
-                <span>3.</span> Work Experience
+                <span>4.</span> Work Experience
               </a>
             </li>
             <li>
               <a href="#contact" onClick={closeSideBar}>
-                <span>4.</span> Contact
+                <span>5.</span> Contact
               </a>
             </li>
             <li>
               <a
-                href="/Lymperopoulos_G_CV_2025.pdf"
+                href="/Lymperopoulos_G_CV_2026.pdf"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >

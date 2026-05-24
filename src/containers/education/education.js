@@ -102,6 +102,37 @@ const Education = () => {
           <div className='timeline-item'>
             <div className='timeline-icon'></div>
             <div className='timeline-content right'>
+              <h2>CURRENT AI ENGINEERING ROADMAP</h2>
+              <div className='timeline-panel'>
+                <div className='timeline-heading'>
+                  <h3 className='subheading'>Professional Development</h3>
+                  <h5 className='subheading'>Frontend Masters & Udemy Business</h5>
+                </div>
+                <div className='timeline-body'>
+                  <p className='text-muted'>
+                    Structured AI Engineering development path focused on
+                    Python, FastAPI, LLM application development, RAG,
+                    LangGraph, MCP, agentic workflows, evals, and production AI
+                    systems.
+                  </p>
+                  <p className='text-muted'>
+                    Selected courses: Practical Prompt Engineering, AI
+                    Engineering Fundamentals, AI Agents Fundamentals v2, AI
+                    Agent: From Prototype to Production, Complete Intro to MCP,
+                    Practical Guide to Python, Intermediate Python, Open Source
+                    AI with Python & Hugging Face, FastAPI - The Complete
+                    Course, Agentic AI Engineering with LangChain & LangGraph,
+                    Ultimate RAG Bootcamp Using LangChain, LangGraph &
+                    LangSmith.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='timeline-item'>
+            <div className='timeline-icon'></div>
+            <div className='timeline-content'>
               <h2>STAFFORDSHIRE UNIVERSITY - 2002</h2>
               <div className='timeline-panel'>
                 <div className='timeline-heading'>
@@ -129,7 +160,7 @@ const Education = () => {
 
           <div className='timeline-item'>
             <div className='timeline-icon'></div>
-            <div className='timeline-content'>
+            <div className='timeline-content right'>
               <h2>MUSIC SCHOOL OF IONIA - 1995 & 1998</h2>
               <div className='timeline-panel'>
                 <div className='timeline-heading'>
@@ -144,7 +175,7 @@ const Education = () => {
 
           <div className='timeline-item'>
             <div className='timeline-icon'></div>
-            <div className='timeline-content right'>
+            <div className='timeline-content'>
               <h2>THE UNIVERSITY OF MICHIGAN - 1998</h2>
               <div className='timeline-panel'>
                 <div className='timeline-heading'>

@@ -8,7 +8,7 @@ const MAX_LEN = 500;
 const COOLDOWN_MS = 3000;
 const MAX_QUESTIONS = 5;
 const STORAGE_KEY = "george-portfolio-chat";
-const CV_PATH = "/Lymperopoulos_G_CV_2025.pdf";
+const CV_PATH = "/Lymperopoulos_G_CV_2026.pdf";
 
 export default function ChatWithGeorge() {
   const [messages, setMessages] = useState([]);
@@ -294,10 +294,10 @@ export default function ChatWithGeorge() {
             limitReached
               ? "You’ve reached the question limit."
               : isSending
-              ? "Generating an answer…"
-              : isOnCooldown
-              ? "Give me a second…"
-              : "Ask me something…"
+                ? "Generating an answer…"
+                : isOnCooldown
+                  ? "Give me a second…"
+                  : "Ask me something…"
           }
           disabled={isSending || limitReached}
           style={{
