@@ -122,13 +122,13 @@ const Hero = () => {
           data-aos-delay={delay()}
           data-aos-duration={initialAnimationDuration}
         >
-          I love working with JavaScript and its ecosystem (React, Angular,
-          NestJS, React-Native, VueJS) as well as C#, .NET, building robust
-          APIs, and SQL database development. <br />
+          Senior full-stack engineer working across React, TypeScript, Node,
+          C#, .NET, SQL, Java, GCP, and AI-augmented delivery systems. <br />
           <br />
-          I’m also passionate about exploring micro-frontends architecture,
-          Next.js, Storyblok, and developing custom npm packages to create
-          scalable, modular solutions.
+          I build robust products and engineering workflows, from production
+          web applications and APIs to MCP-enabled tooling, custom agents, and
+          cloud workflows using BigQuery, Cloud Functions, Pub/Sub, and Vertex
+          AI.
         </SubTitle>
         <Text
           data-aos="fade-right"
@@ -136,8 +136,9 @@ const Hero = () => {
           data-aos-delay={delay()}
           data-aos-duration={initialAnimationDuration}
         >
-          I also enjoy working with PHP, Drupal (custom themes and modules),
-          Wordpress (custom themes and plugins) and Python.
+          Recent work includes Vertex AI classification pipelines for NPS
+          feedback, internal developer tooling via MCP, and reusable agent
+          systems with human approval, evaluation, and architecture guardrails.
         </Text>
         <LinkButton
           href="#contact"

@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "components/layout";
 import Hero from "containers/hero/hero";
 import About from "containers/about/about";
+import AIExperience from "containers/aiExperience/aiExperience";
 import Education from "containers/education/education";
 import WorkExperience from "containers/workExperience/workExperience";
 import Contact from "containers/contact/contact";
@@ -14,6 +15,7 @@ const IndexPage = () => {
       <Layout>
         <Hero />
         <About />
+        <AIExperience />
         <Work />
         <Education />
         <WorkExperience />

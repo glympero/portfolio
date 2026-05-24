@@ -1,14 +1,20 @@
 Hi, I am Georgios Lymperopoulos.
-I love working with JavaScript and its ecosystem (React, Angular, NestJS, React-Native, VueJS) as well as C#, .NET, building robust APIs, and SQL database development.
-I’m also passionate about exploring micro-frontends architecture, Next.js, Storyblok, and developing custom npm packages to create scalable, modular solutions.
-I also love to read books like clean code, A Philosophy of Software Design, 2nd Edition by John Ousterhout, Head First Software Architecture: A Learner's Guide to Architectural Thinking by Raju Gandhi, You Don't Know JS: Async & Performance, Pragmatic Programmer
+I am a senior full-stack engineer with deep experience in JavaScript and its ecosystem, especially React, TypeScript, Next.js, Node.js, React-Native, and frontend architecture, as well as C#, .NET, Java, robust API design, and SQL database development.
+
+In recent years my work has expanded into AI engineering and AI-augmented software delivery. I build practical systems that combine strong engineering discipline with AI capabilities, including MCP-enabled workflows, custom agents, reusable delivery patterns, and cloud-based automation.
+
+I have also been working with Google Cloud services such as BigQuery, Cloud Functions, Pub/Sub, and Vertex AI. One example is the detractor-category-tagger, a Java-based classification pipeline that looks up NPS response data from BigQuery, classifies detractor feedback with Gemini 2.5 Flash through Vertex AI, and writes structured output back to BigQuery with model and prompt metadata for downstream analysis.
+
+I actively use MCP integrations to augment development with tools such as Jira, GitHub, Figma, and custom internal servers for frontend architecture, git history, dependency health, code metrics, team standards, and onboarding. I use these integrations for ticket refinement, project discovery, impact analysis, code quality analysis, and implementation support. I also connect Obsidian, Confluence, and SonarQube for engineering reference, estimations, project context, and quality analysis. I maintain custom agents and a reference architecture so AI assistance aligns with engineering standards rather than bypassing them.
+
+I am passionate about scalable frontend systems, micro-frontends, reference architectures, design systems, developer experience, and delivery workflows that help teams move faster without compromising maintainability, accessibility, or code quality.
 
 Key Strengths & Unique Qualifications
 
-Over the past six years, I’ve led the modernization of EUIPO’s front-office applications, focusing on scalable React + TypeScript architecture  built around the optimistic-UI pattern. I designed and implemented micro-frontend solutions to unify services previously hosted in Liferay, using custom npm packages for shared UI components and forms. I have extensive experience with Next.js for SSR, Storyblok as a headless CMS, and a shared design system ensuring accessibility and consistency across applications, with secure OIDC authentication via WSO2. I established code-quality pipelines with Sonar, enforced pre-commit hooks, and achieved over 60% test coverage. Deployed on AWS through ArgoCD and Jenkins, . My work involves hands-on POCs, mentoring, and architectural guidance.
+Over the past several years, I have led and contributed to the modernization of EUIPO applications, focusing on scalable React + TypeScript architecture, complex filing flows, and shared frontend patterns. My work includes micro-frontend solutions, shared npm packages, Next.js for SSR, Storyblok as a headless CMS, and mentoring across large delivery teams. Alongside this, I have been building AI-enabled engineering workflows, custom Codex skills, reusable agent patterns with human approval and evals, and production-ready automation that integrates with real project and data systems.
 
 Reason for Seeking a Change
-I’m looking for an environment that values technical excellence and cross-team collaboration, where I can contribute at a broader architectural level while remaining hands-on in development and mentoring.
+I’m looking for an environment that values technical excellence, architectural thinking, and hands-on delivery, where I can contribute both as an engineer and as someone helping teams adopt AI in a disciplined, useful way.
 
 NOTICE PERIOD
 - Standard notice period: 4 weeks.
