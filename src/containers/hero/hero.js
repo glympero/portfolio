@@ -6,21 +6,21 @@ import LinkButton from "components/link-button/link-button";
 const { colors, fonts, initialAnimationDuration, delay } = theme;
 
 const Section = styled.section`
-  height: 100vh;
+  min-height: 100vh;
   font-size: 3.5rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 5rem;
-  margin-top: 2rem;
+  padding: 10rem 5rem 0;
+  box-sizing: border-box;
 
   @media screen and (max-width: 900px) {
-    padding: 0 4rem;
+    padding: 10rem 4rem 0;
   }
 
   @media screen and (max-width: 600px) {
-    padding: 0 2.5rem;
+    padding: 7.5rem 2.5rem 0;
   }
 `;
 
